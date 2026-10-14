@@ -59,6 +59,66 @@ PRODUCT_MAP = {
     "Slack": "Slack",
 }
 
+# Maps cert code substring → product list (cert prep courses have products=[] in API)
+CERT_PRODUCT_MAP = [
+    ('agentforce-specialist',        ['Agentforce']),
+    ('agentforce-life-sciences',     ['Agentforce', 'Industries']),
+    ('sales-consultant',             ['Agentforce', 'Sales Cloud']),
+    ('sales-foundations',            ['Agentforce', 'Sales Cloud']),
+    ('service-consultant',           ['Agentforce', 'Service Cloud']),
+    ('public-sector',                ['Industries']),
+    ('communications-cloud',         ['Industries']),
+    ('consumer-goods-cloud',         ['Industries']),
+    ('financial-services-cloud',     ['Industries']),
+    ('health-cloud',                 ['Industries']),
+    ('manufacturing-cloud',          ['Industries']),
+    ('nonprofit-cld',                ['Industries']),
+    ('omnistudio',                   ['Industries']),
+    ('fs-consultant',                ['Field Service']),
+    ('field-service',                ['Field Service']),
+    ('b2b-commerce',                 ['Commerce Cloud']),
+    ('b2c-comm',                     ['Commerce Cloud']),
+    ('b2c-solution',                 ['Commerce Cloud']),
+    ('mce-',                         ['Marketing Cloud']),
+    ('mc-email',                     ['Marketing Cloud']),
+    ('engagement-specialist',        ['Marketing Cloud']),
+    ('marketing-foundations',        ['Marketing Cloud']),
+    ('marketing-cloud-next',         ['Marketing Cloud']),
+    ('mule-',                        ['MuleSoft']),
+    ('tableau-',                     ['Tableau']),
+    ('crm-analytics',                ['CRM Analytics']),
+    ('data-cloud',                   ['Data Cloud']),
+    ('exp-cld',                      ['Experience Cloud']),
+    ('experience-cloud',             ['Experience Cloud']),
+    ('revenue-cloud',                ['Revenue Cloud / CPQ']),
+    ('slack-',                       ['Platform']),
+    ('platform-',                    ['Platform']),
+    ('app-architect',                ['Platform']),
+    ('app-builder',                  ['Platform']),
+    ('sys-architect',                ['Platform']),
+    ('tech-architect',               ['Platform']),
+    ('review-board',                 ['Platform']),
+    ('heroku',                       ['Platform']),
+    ('javascript-dev',               ['Platform']),
+    ('business-analyst',             ['Platform']),
+    ('identity-access',              ['Platform']),
+    ('integration-arch',             ['Platform']),
+    ('dev-lifecycle',                ['Platform']),
+    ('sharing-visibility',           ['Platform']),
+    ('strategy-designer',            ['Platform']),
+    ('ux-designer',                  ['Platform']),
+    ('data-architect',               ['Platform']),
+]
+
+
+def infer_cert_products(code):
+    code_lower = code.lower()
+    for pattern, products in CERT_PRODUCT_MAP:
+        if pattern in code_lower:
+            return products
+    return ['Platform']
+
+
 LEVEL_TO_MATURITY = {
     "Foundational": ["getting-started", "building"],
     "Intermediate": ["building", "optimizing"],
@@ -223,6 +283,9 @@ def build_catalog():
             item_type = ASSET_TYPE_TO_TYPE.get(asset_type, "Course")
 
         products = normalize_products(raw_products)
+        # Cert prep courses have products=[] in the API; infer from code
+        if item_type == "Certification Prep" and not products:
+            products = infer_cert_products(code)
         maturity = LEVEL_TO_MATURITY.get(
             level_str,
             ["getting-started", "building", "optimizing", "strategic"],
@@ -249,6 +312,14 @@ def build_catalog():
             print(f"  {i}/{len(courses)} processed")
 
         time.sleep(0.15)
+
+    # Keep only English courses; reject non-ASCII names (some Korean courses are
+    # mislabelled as English by the API but have Korean characters in their names)
+    entries = [
+        e for e in entries
+        if e["language"] in ("English", "")
+        and all(ord(ch) < 128 for ch in e["name"])
+    ]
 
     entries.sort(key=lambda e: e["name"].lower())
     for idx, e in enumerate(entries, 1):

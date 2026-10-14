@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-14T17:20:40Z",
+  "generated": "2026-10-14T17:31:50Z",
   "count": 197,
   "courses": [
     {
@@ -3265,7 +3265,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3289,7 +3291,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3313,7 +3317,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3337,7 +3343,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3361,7 +3369,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3385,7 +3395,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3409,7 +3421,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Commerce Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3433,7 +3447,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Commerce Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3457,7 +3473,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Field Service"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3481,7 +3499,10 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Agentforce",
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3505,7 +3526,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3529,7 +3552,10 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Agentforce",
+        "Sales Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3553,7 +3579,10 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Agentforce",
+        "Sales Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3577,7 +3606,10 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Agentforce",
+        "Service Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3601,7 +3633,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Agentforce"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3625,7 +3659,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3649,7 +3685,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Commerce Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3673,7 +3711,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Commerce Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3697,7 +3737,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3721,7 +3763,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "CRM Analytics"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3745,7 +3789,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Data Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3769,7 +3815,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Experience Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3793,7 +3841,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3817,7 +3867,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3841,7 +3893,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3865,7 +3919,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3889,7 +3945,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3913,7 +3971,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3937,7 +3997,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3961,7 +4023,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -3985,7 +4049,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Marketing Cloud"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4009,7 +4075,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "MuleSoft"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4033,7 +4101,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "MuleSoft"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4057,7 +4127,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "MuleSoft"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4081,7 +4153,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "MuleSoft"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4105,7 +4179,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "MuleSoft"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4129,7 +4205,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4153,7 +4231,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Industries"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4177,7 +4257,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4201,7 +4283,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4225,7 +4309,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4249,7 +4335,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4273,7 +4361,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4297,7 +4387,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4321,7 +4413,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4345,7 +4439,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4369,7 +4465,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4393,7 +4491,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4417,7 +4517,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4441,7 +4543,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4465,7 +4569,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4489,7 +4595,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Revenue Cloud / CPQ"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4513,7 +4621,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4537,7 +4647,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4561,7 +4673,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4585,7 +4699,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4609,7 +4725,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Tableau"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4633,7 +4751,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Tableau"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4657,7 +4777,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Tableau"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4681,7 +4803,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Tableau"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4705,7 +4829,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Tableau"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4729,7 +4855,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Tableau"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4753,7 +4881,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
@@ -4777,7 +4907,9 @@
         "Premier",
         "Signature"
       ],
-      "products": [],
+      "products": [
+        "Platform"
+      ],
       "roles": [],
       "industry": [
         "All"
