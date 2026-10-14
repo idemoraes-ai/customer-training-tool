@@ -21,12 +21,6 @@
       border-color: #0176D3;
       background: #EFF8FF;
     }
-    input[type="radio"]:checked + .lang-pill {
-      background: #0176D3;
-      color: #ffffff;
-      border-color: #0176D3;
-    }
-
     .item-row:hover { background: #FAFBFD; }
 
     /* Print ---------------------------------------------------------------- */
@@ -127,11 +121,6 @@
       </div>
 
       <!-- Language + Maturity -->
-      <div>
-        <label class="field-label">Language Preference</label>
-        <div id="languageGroup" class="flex gap-2 mt-1.5"></div>
-      </div>
-
       <div>
         <label class="field-label">Adoption Maturity</label>
         <div id="maturityGrid" class="grid grid-cols-2 gap-2 mt-1.5"></div>
@@ -294,7 +283,6 @@ const ROLES = [
   'Data Analyst', 'UX Designer',
 ];
 
-const LANGUAGES = ['English', 'Any'];
 
 const MATURITY_OPTIONS = [
   { value: 'getting-started', label: 'Getting Started',   sub: '0–6 months · Basic setup' },
@@ -345,19 +333,6 @@ document.addEventListener('DOMContentLoaded', () => {
     rg.appendChild(lbl);
   });
 
-  // Language pills
-  const lg = document.getElementById('languageGroup');
-  LANGUAGES.forEach((lang, i) => {
-    const wrap = document.createElement('label');
-    wrap.className = 'cursor-pointer select-none';
-    wrap.innerHTML = `
-      <input type="radio" name="language" value="${lang}" class="sr-only" ${i === 2 ? 'checked' : ''} onchange="syncLangPills()">
-      <div class="lang-pill border ${i === 2 ? 'bg-[#0176D3] text-white border-[#0176D3]' : 'border-slate-200 text-slate-600 hover:border-blue-300'} rounded-lg px-4 py-1.5 text-xs font-medium transition-colors text-center">
-        ${lang}
-      </div>`;
-    lg.appendChild(wrap);
-  });
-
   // Maturity radio cards
   const mg = document.getElementById('maturityGrid');
   MATURITY_OPTIONS.forEach(opt => {
@@ -372,19 +347,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mg.appendChild(wrap);
   });
 });
-
-function syncLangPills() {
-  document.querySelectorAll('input[name="language"]').forEach(radio => {
-    const pill = radio.nextElementSibling;
-    if (radio.checked) {
-      pill.classList.add('bg-[#0176D3]', 'text-white', 'border-[#0176D3]');
-      pill.classList.remove('border-slate-200', 'text-slate-600');
-    } else {
-      pill.classList.remove('bg-[#0176D3]', 'text-white', 'border-[#0176D3]');
-      pill.classList.add('border-slate-200', 'text-slate-600');
-    }
-  });
-}
 
 function syncMaturityCards() {
   document.querySelectorAll('input[name="maturity"]').forEach(radio => {
@@ -474,8 +436,6 @@ function buildPathway(profile) {
   const candidates = CATALOG.filter(item => {
     if (!item.tier.includes(profile.tier)) return false;
     if (!item.products.some(p => profile.products.includes(p))) return false;
-    // Language: skip items with a different known language than selected
-    if (profile.language !== 'Any' && item.language && item.language !== profile.language) return false;
     // Roles: if user selected roles AND item has roles, at least one must match
     if (profile.roles.length > 0 && item.roles.length > 0) {
       if (!item.roles.some(r => profile.roles.includes(r))) return false;
@@ -568,8 +528,7 @@ function renderPathway(profile, phases) {
 
   document.getElementById('resultsHeading').textContent = `${profile.name}`;
   document.getElementById('resultsSubhead').textContent =
-    [profile.tier, profile.industry, maturityLabel,
-     profile.language !== 'Any' ? profile.language : null]
+    [profile.tier, profile.industry, maturityLabel]
       .filter(Boolean).join('  ·  ');
 
   const totalItems = phases.reduce((s, p) => s + p.items.length, 0);
@@ -631,7 +590,6 @@ function renderPathway(profile, phases) {
               <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full ${typeCls}">${item.type}</span>
               ${item.level ? `<span class="text-[10px] font-medium px-2 py-0.5 rounded-full ${levelCls}">${item.level}</span>` : ''}
               ${item.code  ? `<span class="text-[10px] text-slate-400 font-mono">${item.code}</span>` : ''}
-              ${item.language ? `<span class="text-[10px] text-slate-400">${item.language}</span>` : ''}
               ${roleTags}
             </div>
             <p class="text-xs text-slate-600 mt-2 leading-relaxed">${item.description}</p>
@@ -683,7 +641,6 @@ function handleSubmit(e) {
   const industry = document.getElementById('industry').value;
   const goals    = document.getElementById('goals').value.trim();
   const maturity = document.querySelector('input[name="maturity"]:checked')?.value;
-  const language = document.querySelector('input[name="language"]:checked')?.value || 'Any';
   const products = [...document.querySelectorAll('input[name="products"]:checked')].map(c => c.value);
   const roles    = [...document.querySelectorAll('input[name="roles"]:checked')].map(c => c.value);
 
@@ -699,7 +656,7 @@ function handleSubmit(e) {
   setState('loading');
 
   setTimeout(() => {
-    const profile = { name, tier, industry, goals, maturity, products, roles, language };
+    const profile = { name, tier, industry, goals, maturity, products, roles };
     const phases  = buildPathway(profile);
 
     if (phases.length === 0) {
@@ -734,7 +691,7 @@ function copyOutput() {
     text += `${phase.title.toUpperCase()}\n${phase.subtitle}\n${'─'.repeat(44)}\n\n`;
     phase.items.forEach(item => {
       text += `${item.globalNum}. ${item.name}\n`;
-      text += `   ${[item.code, item.type, item.level, item.language].filter(Boolean).join('  ·  ')}\n`;
+      text += `   ${[item.code, item.type, item.level].filter(Boolean).join('  ·  ')}\n`;
       text += `   ${item.description}\n`;
       if (item.link) text += `   → ${item.link}\n`;
       text += '\n';
