@@ -259,6 +259,7 @@
 // TRAINING CATALOG — loaded dynamically from catalog.json
 // ================================================================
 let CATALOG = [];
+let CATALOG_UPDATED = '';
 
 async function loadCatalog() {
   try {
@@ -266,6 +267,11 @@ async function loadCatalog() {
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     CATALOG = data.courses || [];
+    if (data.generated) {
+      CATALOG_UPDATED = new Date(data.generated).toLocaleDateString('en-US', {
+        month: 'long', day: 'numeric', year: 'numeric'
+      });
+    }
   } catch (err) {
     console.warn('Catalog load failed:', err.message);
   }
@@ -639,6 +645,7 @@ function renderPathway(profile, phases) {
               ${item.matchedGoals.map(k => `<span class="text-[9px] font-medium px-1.5 py-0.5 rounded bg-[#ECF4FF] text-[#0176D3]">${k}</span>`).join('')}
             </div>` : ''}
             ${printUrl}
+            ${CATALOG_UPDATED ? `<p class="text-[9px] text-slate-400 mt-2">Sourced from Trailhead Academy &middot; Catalog updated ${CATALOG_UPDATED}</p>` : ''}
           </div>
         </div>`;
     }).join('');
