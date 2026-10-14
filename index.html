@@ -3,74 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Training Recommendation Tool</title>
+  <title>Customer Training Pathway — Salesforce Customer Success</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+
     .spinner {
-      border: 3px solid #E2E8F0;
+      border: 3px solid #DCE9F5;
       border-top: 3px solid #0176D3;
       border-radius: 50%;
       width: 36px; height: 36px;
-      animation: spin 0.8s linear infinite;
+      animation: spin 0.85s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    .card { transition: box-shadow 0.15s; }
-    .card:hover { box-shadow: 0 4px 18px rgba(1,118,211,0.12); }
-    .priority-dot {
-      width: 22px; height: 22px;
-      border-radius: 50%;
-      display: inline-flex; align-items: center; justify-content: center;
-      font-size: 11px; font-weight: 700; color: white; flex-shrink: 0;
+
+    input[type="radio"]:checked + .radio-label {
+      border-color: #0176D3;
+      background: #EFF8FF;
     }
-    input[type="radio"]:checked + .radio-label { border-color: #0176D3; background: #EFF8FF; }
+    input[type="radio"]:checked + .lang-pill {
+      background: #0176D3;
+      color: #ffffff;
+      border-color: #0176D3;
+    }
+
+    .item-row:hover { background: #FAFBFD; }
+
+    /* Print ---------------------------------------------------------------- */
+    .no-print  {}
+    .print-show { display: none; }
+
+    @media print {
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      body { background: #ffffff !important; }
+      #formPanel, .no-print { display: none !important; }
+      main { display: block !important; padding: 0 !important; max-width: 100% !important; }
+      #resultsArea { width: 100% !important; }
+      #stateResults { border: none !important; box-shadow: none !important; border-radius: 0 !important; }
+      .print-show  { display: block !important; }
+      .phase-card  { break-inside: avoid; page-break-inside: avoid; }
+      .print-break { break-before: page; page-break-before: always; }
+      .print-footer { display: flex !important; }
+      header { display: none !important; }
+    }
+
+    .print-footer { display: none; }
   </style>
 </head>
-<body class="bg-slate-50 min-h-screen">
+<body class="bg-[#F3F5F9] min-h-screen">
 
-  <!-- Header -->
-  <header class="bg-[#032D60] text-white px-6 py-3.5 flex items-center justify-between shadow">
-    <div class="flex items-center gap-3">
-      <svg width="30" height="20" viewBox="0 0 120 80" fill="none">
-        <ellipse cx="60" cy="40" rx="58" ry="38" fill="#00A1E0"/>
-        <ellipse cx="60" cy="40" rx="40" ry="26" fill="#0176D3"/>
-        <ellipse cx="60" cy="40" rx="22" ry="14" fill="#032D60"/>
-      </svg>
-      <div>
-        <div class="font-semibold text-sm">Customer Training Recommendation Tool</div>
-        <div class="text-[11px] text-blue-300">Customer Success · Internal Tool</div>
-      </div>
+<!-- ── Header ─────────────────────────────────────────────────────────────── -->
+<header class="bg-[#032D60] text-white px-6 py-3.5 flex items-center justify-between shadow-lg no-print">
+  <div class="flex items-center gap-3">
+    <svg width="32" height="21" viewBox="0 0 120 80" fill="none">
+      <ellipse cx="60" cy="40" rx="58" ry="38" fill="#00A1E0"/>
+      <ellipse cx="60" cy="40" rx="40" ry="26" fill="#0176D3"/>
+      <ellipse cx="60" cy="40" rx="22" ry="14" fill="#032D60"/>
+    </svg>
+    <div>
+      <div class="text-sm font-semibold tracking-tight">Customer Training Pathway Tool</div>
+      <div class="text-[11px] text-blue-300 tracking-wide">Customer Success · Internal</div>
     </div>
-  </header>
+  </div>
+  <span class="text-[11px] text-blue-300">Powered by Trailhead Academy</span>
+</header>
 
+<!-- ── Main layout ────────────────────────────────────────────────────────── -->
+<main class="max-w-[1340px] mx-auto px-4 py-7 grid grid-cols-1 xl:grid-cols-[410px_1fr] gap-6 items-start">
 
-  <!-- Main -->
-  <main class="max-w-7xl mx-auto px-4 py-7 grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+  <!-- ── LEFT: Form ───────────────────────────────────────────────────────── -->
+  <div id="formPanel" class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6 no-print">
+    <h2 class="text-sm font-bold text-[#032D60] mb-5 flex items-center gap-2">
+      <span class="w-5 h-5 rounded-full bg-[#0176D3] flex items-center justify-center text-white font-bold shrink-0" style="font-size:9px">1</span>
+      Customer Profile
+    </h2>
 
-    <!-- LEFT: Form -->
-    <div class="bg-white rounded-2xl border border-slate-100 shadow-sm p-6">
-      <h2 class="text-sm font-semibold text-slate-800 mb-5">Customer Profile</h2>
-      <form id="mainForm" onsubmit="handleSubmit(event)" novalidate class="space-y-5">
+    <form id="mainForm" onsubmit="handleSubmit(event)" novalidate class="space-y-5">
 
-        <!-- Name + Tier -->
+      <!-- Name / Tier / Industry -->
+      <div class="space-y-3">
+        <div>
+          <label class="field-label">Customer Name</label>
+          <input id="customerName" type="text" placeholder="Acme Corp" required
+            class="field-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 transition">
+        </div>
         <div class="grid grid-cols-2 gap-3">
-          <div class="col-span-2">
-            <label class="block text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Customer Name</label>
-            <input id="customerName" type="text" placeholder="Acme Corp" required
-              class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
-          </div>
           <div>
-            <label class="block text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Success Plan Tier</label>
-            <select id="tier" required class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white">
-              <option value="">Select...</option>
+            <label class="field-label">Success Plan</label>
+            <select id="tier" required class="field-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white transition">
+              <option value="">Select…</option>
               <option>Premier</option>
               <option>Signature</option>
             </select>
           </div>
           <div>
-            <label class="block text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Industry</label>
-            <select id="industry" required class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white">
-              <option value="">Select...</option>
+            <label class="field-label">Industry</label>
+            <select id="industry" required class="field-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-white transition">
+              <option value="">Select…</option>
               <option>Financial Services</option>
               <option>Healthcare &amp; Life Sciences</option>
               <option>Manufacturing</option>
@@ -83,151 +112,214 @@
             </select>
           </div>
         </div>
-
-        <!-- Products -->
-        <div>
-          <label class="block text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-2">Products in Use</label>
-          <div id="productsGrid" class="grid grid-cols-2 gap-1"></div>
-        </div>
-
-        <!-- Maturity -->
-        <div>
-          <label class="block text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-2">Adoption Maturity</label>
-          <div id="maturityGrid" class="grid grid-cols-2 gap-2"></div>
-        </div>
-
-        <!-- Goals -->
-        <div>
-          <label class="block text-[11px] font-semibold text-slate-500 uppercase tracking-wide mb-1.5">Business Goals &amp; Challenges</label>
-          <textarea id="goals" rows="3" required
-            placeholder="e.g. Improve pipeline visibility, reduce case handle time, drive CRM adoption across sales team, prepare for Q4 peak season..."
-            class="w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none leading-relaxed"></textarea>
-        </div>
-
-        <button type="submit" id="submitBtn"
-          class="w-full bg-[#0176D3] hover:bg-[#0257a0] text-white font-semibold py-2.5 rounded-xl text-sm transition-colors flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-          Get Recommendations
-        </button>
-      </form>
-    </div>
-
-    <!-- RIGHT: Results -->
-    <div id="resultsArea">
-
-      <!-- Empty state -->
-      <div id="stateEmpty" class="bg-white rounded-2xl border border-slate-100 shadow-sm p-14 flex flex-col items-center text-center">
-        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mb-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0176D3" stroke-width="1.7">
-            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-          </svg>
-        </div>
-        <p class="text-sm font-medium text-slate-600">Fill in the customer profile</p>
-        <p class="text-xs text-slate-400 mt-1">Personalized recommendations will appear here</p>
       </div>
 
-      <!-- Loading -->
-      <div id="stateLoading" class="hidden bg-white rounded-2xl border border-slate-100 shadow-sm p-14 flex flex-col items-center text-center">
-        <div class="spinner mb-4"></div>
-        <p class="text-sm font-medium text-slate-600">Finding the best matches...</p>
-        <p class="text-xs text-slate-400 mt-1.5">Analyzing catalog against customer profile</p>
-      </div>
-
-      <!-- Error -->
-      <div id="stateError" class="hidden bg-red-50 border border-red-100 rounded-2xl p-6">
-        <p class="text-sm font-semibold text-red-700 flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
-          Something went wrong
-        </p>
-        <p id="errorMsg" class="text-xs text-red-600 mt-2 leading-relaxed"></p>
-      </div>
-
-      <!-- Results -->
-      <div id="stateResults" class="hidden space-y-3">
-        <div class="flex items-center justify-between">
-          <div>
-            <h2 id="resultsHeading" class="text-sm font-semibold text-slate-800"></h2>
-            <p id="resultsSubhead" class="text-[11px] text-slate-500 mt-0.5"></p>
-          </div>
-          <button onclick="copyOutput()" id="copyBtn"
-            class="flex items-center gap-1.5 text-xs font-medium text-[#0176D3] border border-blue-200 hover:border-blue-400 hover:bg-blue-50 rounded-lg px-3 py-1.5 transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-            Copy for email
-          </button>
-        </div>
-        <div id="cards" class="space-y-3"></div>
-        <p class="text-[11px] text-slate-400 text-center pt-1">Generated by Claude · Verify links before sending to customers</p>
-      </div>
-
-    </div>
-  </main>
-
-  <!-- Catalog status banner -->
-  <div class="max-w-7xl mx-auto px-4 pb-10">
-    <div class="bg-amber-50 border border-amber-100 rounded-xl px-5 py-3 flex gap-3 items-start">
-      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2" class="mt-0.5 shrink-0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <!-- Products -->
       <div>
-        <p id="catalogInfo" class="text-xs font-semibold text-amber-800">Loading catalog…</p>
-        <p id="catalogDetail" class="text-xs text-amber-700 mt-0.5 leading-relaxed">Fetching live courses from Trailhead Academy…</p>
+        <label class="field-label">Products in Use</label>
+        <div id="productsGrid" class="grid grid-cols-2 gap-0.5 mt-1.5"></div>
       </div>
-    </div>
+
+      <!-- Roles -->
+      <div>
+        <label class="field-label">Who's Being Trained? <span class="normal-case font-normal text-slate-400">(optional)</span></label>
+        <div id="rolesGrid" class="grid grid-cols-2 gap-0.5 mt-1.5"></div>
+      </div>
+
+      <!-- Language + Maturity -->
+      <div>
+        <label class="field-label">Language Preference</label>
+        <div id="languageGroup" class="flex gap-2 mt-1.5"></div>
+      </div>
+
+      <div>
+        <label class="field-label">Adoption Maturity</label>
+        <div id="maturityGrid" class="grid grid-cols-2 gap-2 mt-1.5"></div>
+      </div>
+
+      <!-- Goals -->
+      <div>
+        <label class="field-label">Business Goals &amp; Challenges</label>
+        <textarea id="goals" rows="3" required
+          placeholder="e.g. Improve pipeline visibility, reduce case handle time, drive CRM adoption across sales team…"
+          class="field-input w-full px-3 py-2 rounded-lg border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 resize-none leading-relaxed transition mt-1.5"></textarea>
+      </div>
+
+      <button type="submit"
+        class="w-full bg-[#0176D3] hover:bg-[#0257a0] active:bg-[#014486] text-white font-semibold py-2.5 rounded-xl text-sm transition-colors flex items-center justify-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Generate Learning Pathway
+      </button>
+    </form>
   </div>
 
-<script>
+  <!-- ── RIGHT: Results ───────────────────────────────────────────────────── -->
+  <div id="resultsArea">
 
+    <!-- Empty -->
+    <div id="stateEmpty" class="bg-white rounded-2xl border border-slate-100 shadow-sm p-16 flex flex-col items-center text-center">
+      <div class="w-14 h-14 rounded-2xl bg-[#ECF4FF] flex items-center justify-center mb-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0176D3" stroke-width="1.5">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+        </svg>
+      </div>
+      <p class="text-sm font-semibold text-slate-700">Build a personalized learning pathway</p>
+      <p class="text-xs text-slate-400 mt-1.5 max-w-xs leading-relaxed">Complete the customer profile to generate a structured training pathway across workshops, courses, and certifications.</p>
+    </div>
+
+    <!-- Loading -->
+    <div id="stateLoading" class="hidden bg-white rounded-2xl border border-slate-100 shadow-sm p-16 flex flex-col items-center text-center">
+      <div class="spinner mb-4"></div>
+      <p class="text-sm font-semibold text-slate-600">Building your learning pathway…</p>
+      <p class="text-xs text-slate-400 mt-1.5">Matching catalog against customer profile</p>
+    </div>
+
+    <!-- Error -->
+    <div id="stateError" class="hidden bg-red-50 border border-red-100 rounded-2xl p-6">
+      <p class="text-sm font-semibold text-red-700 flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+        No matching pathway found
+      </p>
+      <p id="errorMsg" class="text-xs text-red-600 mt-2 leading-relaxed"></p>
+    </div>
+
+    <!-- ── Pathway results ─────────────────────────────────────────────────── -->
+    <div id="stateResults" class="hidden space-y-4">
+
+      <!-- Print-only header (hidden on screen) -->
+      <div class="print-show" style="background:#032D60;color:#fff;padding:24px 32px;margin-bottom:24px;display:none">
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <div style="display:flex;align-items:center;gap:12px">
+            <svg width="36" height="24" viewBox="0 0 120 80" fill="none">
+              <ellipse cx="60" cy="40" rx="58" ry="38" fill="#00A1E0"/>
+              <ellipse cx="60" cy="40" rx="40" ry="26" fill="#0176D3"/>
+              <ellipse cx="60" cy="40" rx="22" ry="14" fill="#032D60"/>
+            </svg>
+            <div>
+              <div style="font-size:14px;font-weight:700">Training Pathway</div>
+              <div style="font-size:11px;color:#93C5FD">Customer Success · Salesforce</div>
+            </div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:10px;color:#93C5FD;text-transform:uppercase;letter-spacing:.05em">Prepared for</div>
+            <div id="printCustomerName" style="font-size:14px;font-weight:700"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results header card -->
+      <div class="bg-[#032D60] rounded-2xl px-6 py-5 text-white shadow-md no-print">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <div class="text-[10px] text-blue-300 uppercase tracking-widest mb-1">Training Pathway</div>
+            <h2 id="resultsHeading" class="text-lg font-bold tracking-tight"></h2>
+            <p id="resultsSubhead" class="text-[12px] text-blue-200 mt-1 leading-relaxed"></p>
+            <div id="pathwayStats" class="flex items-center gap-2 text-[11px] text-blue-300 mt-2.5 font-medium"></div>
+          </div>
+          <div class="flex gap-2 shrink-0 pt-0.5">
+            <button onclick="copyOutput()" id="copyBtn"
+              class="flex items-center gap-1.5 text-xs font-medium text-white border border-blue-400 hover:bg-white hover:text-[#032D60] hover:border-white rounded-lg px-3 py-1.5 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              Copy
+            </button>
+            <button onclick="window.print()"
+              class="flex items-center gap-1.5 text-xs font-medium text-white border border-blue-400 hover:bg-white hover:text-[#032D60] hover:border-white rounded-lg px-3 py-1.5 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Save as PDF
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase cards injected here -->
+      <div id="phaseCards"></div>
+
+      <!-- Print footer -->
+      <div class="print-footer border-t border-slate-200 mt-4 pt-4 flex items-center justify-between text-[10px] text-slate-400">
+        <span>Prepared by Salesforce Customer Success · Confidential</span>
+        <span id="printDate"></span>
+      </div>
+
+      <p class="text-[11px] text-slate-400 text-center pt-1 no-print">Verify all links before sharing with customers · Catalog refreshed weekly via GitHub Actions</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- ── Shared label style via Tailwind apply workaround ─────────────────── -->
+<style>
+  .field-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 0;
+  }
+</style>
+
+<script>
 // ================================================================
 // TRAINING CATALOG — loaded dynamically from catalog.json
 // ================================================================
 let CATALOG = [];
 
 async function loadCatalog() {
-  const infoEl   = document.getElementById('catalogInfo');
-  const detailEl = document.getElementById('catalogDetail');
   try {
     const resp = await fetch('./catalog.json');
     if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
     const data = await resp.json();
     CATALOG = data.courses || [];
-
-    const date = data.generated
-      ? new Date(data.generated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-      : 'unknown';
-
-    const langCounts = {};
-    CATALOG.forEach(c => { langCounts[c.language] = (langCounts[c.language] || 0) + 1; });
-    const topLangs = Object.entries(langCounts)
-      .sort((a, b) => b[1] - a[1]).slice(0, 3)
-      .map(([l, n]) => `${n} ${l}`).join(' · ');
-
-    const types = {};
-    CATALOG.forEach(c => { types[c.type] = (types[c.type] || 0) + 1; });
-    const typeStr = Object.entries(types).map(([t, n]) => `${n} ${t}s`).join(', ');
-
-    infoEl.textContent   = `${CATALOG.length} offerings loaded · Last updated: ${date}`;
-    detailEl.textContent = `${typeStr} · ${topLangs} · Auto-refreshed weekly via GitHub Actions`;
   } catch (err) {
-    infoEl.textContent   = 'Could not load live catalog — try refreshing the page';
-    detailEl.textContent = `Error: ${err.message}`;
+    console.warn('Catalog load failed:', err.message);
   }
 }
 
 // ================================================================
-// PRODUCTS & MATURITY OPTIONS (edit labels here if needed)
+// STATIC OPTIONS
 // ================================================================
 const PRODUCTS = [
-  "Agentforce",
-  "Sales Cloud", "Service Cloud", "Marketing Cloud", "Commerce Cloud",
-  "Experience Cloud", "Tableau",
-  "Revenue Cloud / CPQ", "Field Service", "MuleSoft",
-  "Data Cloud", "Industries", "CRM Analytics", "Platform"
+  'Agentforce',
+  'Sales Cloud', 'Service Cloud', 'Marketing Cloud', 'Commerce Cloud',
+  'Experience Cloud', 'Tableau',
+  'Revenue Cloud / CPQ', 'Field Service', 'MuleSoft',
+  'Data Cloud', 'Industries', 'CRM Analytics', 'Platform',
 ];
 
-const MATURITY_OPTIONS = [
-  { value: "getting-started", label: "Getting Started",    sub: "0–6 months · Basic setup" },
-  { value: "building",        label: "Building Momentum",  sub: "6–18 months · Core features live" },
-  { value: "optimizing",      label: "Optimizing",         sub: "18+ months · Expanding usage" },
-  { value: "strategic",       label: "Strategic",          sub: "Multi-product · Centre of Excellence" }
+const ROLES = [
+  'Administrator', 'Consultant',
+  'Developer', 'Architect',
+  'Business Analyst', 'Marketer',
+  'Data Analyst', 'UX Designer',
 ];
+
+const LANGUAGES = ['English', 'Japanese', 'Any'];
+
+const MATURITY_OPTIONS = [
+  { value: 'getting-started', label: 'Getting Started',   sub: '0–6 months · Basic setup' },
+  { value: 'building',        label: 'Building Momentum', sub: '6–18 months · Core features live' },
+  { value: 'optimizing',      label: 'Optimizing',        sub: '18+ months · Expanding usage' },
+  { value: 'strategic',       label: 'Strategic',         sub: 'Multi-product · Centre of Excellence' },
+];
+
+const MATURITY_ORDER = ['getting-started', 'building', 'optimizing', 'strategic'];
+
+// Level → visual badge colour class
+const LEVEL_BADGE = {
+  'Foundational': 'bg-sky-100 text-sky-700',
+  'Intermediate': 'bg-blue-100 text-blue-700',
+  'Advanced':     'bg-indigo-100 text-indigo-700',
+  '':             'bg-slate-100 text-slate-500',
+};
+// Type → badge colour
+const TYPE_BADGE = {
+  'Workshop':           'bg-violet-100 text-violet-700',
+  'Course':             'bg-emerald-100 text-emerald-700',
+  'Certification Prep': 'bg-amber-100 text-amber-700',
+};
+// Approximate learning hours per type
+const HOURS = { Workshop: 3, Course: 8, 'Certification Prep': 4 };
 
 // ================================================================
 // INIT
@@ -235,54 +327,88 @@ const MATURITY_OPTIONS = [
 document.addEventListener('DOMContentLoaded', () => {
   loadCatalog();
 
-  // Render products
-  const pgrid = document.getElementById('productsGrid');
+  // Products checkboxes
+  const pg = document.getElementById('productsGrid');
   PRODUCTS.forEach(p => {
-    const label = document.createElement('label');
-    label.className = 'flex items-center gap-2 text-sm text-slate-700 cursor-pointer hover:bg-slate-50 rounded-md px-2 py-1.5 select-none';
-    label.innerHTML = `<input type="checkbox" name="products" value="${p}" class="rounded border-slate-300 text-blue-600 focus:ring-blue-400 focus:ring-1"> ${p}`;
-    pgrid.appendChild(label);
+    const lbl = document.createElement('label');
+    lbl.className = 'flex items-center gap-2 text-xs text-slate-700 cursor-pointer hover:bg-slate-50 rounded-md px-2 py-1.5 select-none transition';
+    lbl.innerHTML = `<input type="checkbox" name="products" value="${p}" class="rounded border-slate-300 text-blue-600 focus:ring-1 focus:ring-blue-400"> ${p}`;
+    pg.appendChild(lbl);
   });
 
-  // Render maturity
-  const mgrid = document.getElementById('maturityGrid');
-  MATURITY_OPTIONS.forEach(opt => {
-    const wrapper = document.createElement('label');
-    wrapper.className = 'cursor-pointer select-none';
-    wrapper.innerHTML = `
-      <input type="radio" name="maturity" value="${opt.value}" class="sr-only" onchange="updateMaturityStyle()">
-      <div class="radio-label border border-slate-200 rounded-xl px-3 py-2.5 hover:border-blue-300 hover:bg-blue-50 transition-colors">
-        <p class="text-sm font-medium text-slate-700">${opt.label}</p>
-        <p class="text-[11px] text-slate-400 mt-0.5">${opt.sub}</p>
+  // Roles checkboxes
+  const rg = document.getElementById('rolesGrid');
+  ROLES.forEach(r => {
+    const lbl = document.createElement('label');
+    lbl.className = 'flex items-center gap-2 text-xs text-slate-700 cursor-pointer hover:bg-slate-50 rounded-md px-2 py-1.5 select-none transition';
+    lbl.innerHTML = `<input type="checkbox" name="roles" value="${r}" class="rounded border-slate-300 text-blue-600 focus:ring-1 focus:ring-blue-400"> ${r}`;
+    rg.appendChild(lbl);
+  });
+
+  // Language pills
+  const lg = document.getElementById('languageGroup');
+  LANGUAGES.forEach((lang, i) => {
+    const wrap = document.createElement('label');
+    wrap.className = 'cursor-pointer select-none';
+    wrap.innerHTML = `
+      <input type="radio" name="language" value="${lang}" class="sr-only" ${i === 2 ? 'checked' : ''} onchange="syncLangPills()">
+      <div class="lang-pill border ${i === 2 ? 'bg-[#0176D3] text-white border-[#0176D3]' : 'border-slate-200 text-slate-600 hover:border-blue-300'} rounded-lg px-4 py-1.5 text-xs font-medium transition-colors text-center">
+        ${lang}
       </div>`;
-    mgrid.appendChild(wrapper);
+    lg.appendChild(wrap);
+  });
+
+  // Maturity radio cards
+  const mg = document.getElementById('maturityGrid');
+  MATURITY_OPTIONS.forEach(opt => {
+    const wrap = document.createElement('label');
+    wrap.className = 'cursor-pointer select-none';
+    wrap.innerHTML = `
+      <input type="radio" name="maturity" value="${opt.value}" class="sr-only" onchange="syncMaturityCards()">
+      <div class="radio-label border border-slate-200 rounded-xl px-3 py-2.5 hover:border-blue-300 hover:bg-blue-50 transition-colors">
+        <p class="text-xs font-semibold text-slate-700">${opt.label}</p>
+        <p class="text-[10px] text-slate-400 mt-0.5">${opt.sub}</p>
+      </div>`;
+    mg.appendChild(wrap);
   });
 });
 
-function updateMaturityStyle() {
-  document.querySelectorAll('input[name="maturity"]').forEach(radio => {
-    const div = radio.nextElementSibling;
+function syncLangPills() {
+  document.querySelectorAll('input[name="language"]').forEach(radio => {
+    const pill = radio.nextElementSibling;
     if (radio.checked) {
-      div.classList.add('border-blue-500', 'bg-blue-50');
-      div.classList.remove('border-slate-200');
+      pill.classList.add('bg-[#0176D3]', 'text-white', 'border-[#0176D3]');
+      pill.classList.remove('border-slate-200', 'text-slate-600');
     } else {
-      div.classList.remove('border-blue-500', 'bg-blue-50');
-      div.classList.add('border-slate-200');
+      pill.classList.remove('bg-[#0176D3]', 'text-white', 'border-[#0176D3]');
+      pill.classList.add('border-slate-200', 'text-slate-600');
+    }
+  });
+}
+
+function syncMaturityCards() {
+  document.querySelectorAll('input[name="maturity"]').forEach(radio => {
+    const card = radio.nextElementSibling;
+    if (radio.checked) {
+      card.classList.add('border-blue-500', 'bg-blue-50');
+      card.classList.remove('border-slate-200');
+    } else {
+      card.classList.remove('border-blue-500', 'bg-blue-50');
+      card.classList.add('border-slate-200');
     }
   });
 }
 
 // ================================================================
-// RECOMMENDATION ENGINE (runs locally — no API key required)
+// SCORING ENGINE
 // ================================================================
-
 const STOP_WORDS = new Set([
   'the','a','an','and','or','but','in','on','at','to','for','of','with','by',
   'from','up','about','into','our','your','their','its','we','you','they','it',
   'is','are','was','were','be','been','have','has','had','do','does','did',
   'will','would','could','should','may','might','get','set','use','help','make',
   'work','need','want','also','this','that','these','those','how','what','which',
-  'when','where','who','can','more','very','just','than','then','some','any'
+  'when','where','who','can','more','very','just','than','then','some','any',
 ]);
 
 function extractKeywords(text) {
@@ -293,62 +419,242 @@ function extractKeywords(text) {
 }
 
 function scoreItem(item, profile) {
-  let score = 0;
-
-  // Product match — strongest signal
+  // Product match is required
   const matchedProducts = item.products.filter(p => profile.products.includes(p));
-  if (matchedProducts.length === 0) return -1; // no product overlap, skip
-  score += matchedProducts.length * 5;
+  if (matchedProducts.length === 0) return -1;
+  let score = matchedProducts.length * 5;
 
-  // Industry match
+  // Role match (bonus — roles are optional)
+  if (profile.roles.length > 0 && item.roles.length > 0) {
+    const matchedRoles = item.roles.filter(r => profile.roles.includes(r));
+    score += matchedRoles.length * 4;
+  }
+
+  // Industry
   if (item.industry.includes(profile.industry)) score += 3;
   else if (item.industry.includes('All')) score += 1;
-  else return -1; // industry mismatch, skip
+  else return -1;
 
-  // Maturity match
-  const maturityOrder = ['getting-started', 'building', 'optimizing', 'strategic'];
-  const profileIdx = maturityOrder.indexOf(profile.maturity);
+  // Maturity alignment
+  const profileIdx = MATURITY_ORDER.indexOf(profile.maturity);
   if (item.maturity.includes(profile.maturity)) {
     score += 3;
   } else {
-    const closest = Math.min(...item.maturity.map(m => Math.abs(maturityOrder.indexOf(m) - profileIdx)));
+    const closest = Math.min(...item.maturity.map(m => Math.abs(MATURITY_ORDER.indexOf(m) - profileIdx)));
     if (closest === 1) score += 1;
-    else score -= 1;
   }
 
-  // Goals keyword match against name + description
+  // Goals keyword match
   const keywords = extractKeywords(profile.goals);
-  const searchText = (item.name + ' ' + item.description).toLowerCase();
-  score += keywords.filter(k => searchText.includes(k)).length * 2;
+  const haystack = (item.name + ' ' + item.description).toLowerCase();
+  score += keywords.filter(k => haystack.includes(k)).length * 2;
 
   return score;
 }
 
-function buildRationale(item, profile) {
-  const parts = [];
+// ================================================================
+// PATHWAY BUILDER
+// ================================================================
+function buildPathway(profile) {
+  const maturityToStartLevel = {
+    'getting-started': 'Foundational',
+    'building':        'Foundational',
+    'optimizing':      'Intermediate',
+    'strategic':       'Advanced',
+  };
+  const startLevel  = maturityToStartLevel[profile.maturity] || 'Foundational';
+  const levelOrder  = ['Foundational', 'Intermediate', 'Advanced', ''];
+  const startIdx    = levelOrder.indexOf(startLevel);
+  // Rotate so preferred starting level comes first
+  const rotated     = [...levelOrder.slice(startIdx), ...levelOrder.slice(0, startIdx)];
+  const profileMIdx = MATURITY_ORDER.indexOf(profile.maturity);
 
-  const matchedProducts = item.products.filter(p => profile.products.includes(p));
-  if (matchedProducts.length > 0) {
-    parts.push(`Directly relevant to ${matchedProducts.join(' and ')}, which ${profile.name} has active.`);
+  // Filter
+  const candidates = CATALOG.filter(item => {
+    if (!item.tier.includes(profile.tier)) return false;
+    if (!item.products.some(p => profile.products.includes(p))) return false;
+    // Language: skip items with a different known language than selected
+    if (profile.language !== 'Any' && item.language && item.language !== profile.language) return false;
+    // Roles: if user selected roles AND item has roles, at least one must match
+    if (profile.roles.length > 0 && item.roles.length > 0) {
+      if (!item.roles.some(r => profile.roles.includes(r))) return false;
+    }
+    // Maturity relevance: show items from one step before current up to end
+    const relevant = item.maturity.some(m => {
+      const idx = MATURITY_ORDER.indexOf(m);
+      return idx >= Math.max(0, profileMIdx - 1);
+    });
+    return relevant;
+  });
+
+  // Score
+  const scored = candidates
+    .map(item => ({ item, score: scoreItem(item, profile) }))
+    .filter(({ score }) => score > 0);
+
+  // Sort helper: by rotated level order first, then by score
+  function sortGroup(items) {
+    return [...items].sort((a, b) => {
+      const ai = rotated.indexOf(a.item.level || '');
+      const bi = rotated.indexOf(b.item.level || '');
+      const an = ai === -1 ? rotated.length : ai;
+      const bn = bi === -1 ? rotated.length : bi;
+      if (an !== bn) return an - bn;
+      return b.score - a.score;
+    });
   }
 
+  const byType = {
+    Workshop:           sortGroup(scored.filter(s => s.item.type === 'Workshop')),
+    Course:             sortGroup(scored.filter(s => s.item.type === 'Course')),
+    'Certification Prep': sortGroup(scored.filter(s => s.item.type === 'Certification Prep')),
+  };
+
+  const phaseConfig = [
+    {
+      key:      'Workshop',
+      title:    'Phase 1 — Hands-On Workshops',
+      subtitle: 'Focused 2–4 hour virtual sessions to build immediate, practical skills',
+      max: 4,
+    },
+    {
+      key:      'Course',
+      title:    'Phase 2 — Instructor-Led Courses',
+      subtitle: '1–2 day deep-dive training delivered by certified Salesforce instructors',
+      max: 4,
+    },
+    {
+      key:      'Certification Prep',
+      title:    'Phase 3 — Certification Pathway',
+      subtitle: 'Exam-focused preparation to formally validate and recognise expertise',
+      max: 3,
+    },
+  ];
+
+  const phases = [];
+  let globalNum = 1;
+  let phaseNum  = 1;
+
+  phaseConfig.forEach(cfg => {
+    const pool = byType[cfg.key];
+    if (pool.length === 0) return;
+    const items = pool.slice(0, cfg.max).map(s => ({
+      ...s.item,
+      globalNum: globalNum++,
+      matchedProducts: s.item.products.filter(p => profile.products.includes(p)),
+      matchedRoles:    s.item.roles.filter(r => profile.roles.includes(r)),
+    }));
+    phases.push({ phaseNum: phaseNum++, title: cfg.title, subtitle: cfg.subtitle, items });
+  });
+
+  return phases;
+}
+
+// ================================================================
+// RENDER PATHWAY
+// ================================================================
+function renderPathway(profile, phases) {
   const maturityLabel = MATURITY_OPTIONS.find(m => m.value === profile.maturity)?.label || profile.maturity;
-  if (item.maturity.includes(profile.maturity)) {
-    parts.push(`Well-suited for teams at the ${maturityLabel} stage.`);
-  }
 
-  if (!item.industry.includes('All') && item.industry.includes(profile.industry)) {
-    parts.push(`Designed specifically for the ${profile.industry} industry.`);
-  }
+  document.getElementById('resultsHeading').textContent = `${profile.name}`;
+  document.getElementById('resultsSubhead').textContent =
+    [profile.tier, profile.industry, maturityLabel,
+     profile.language !== 'Any' ? profile.language : null]
+      .filter(Boolean).join('  ·  ');
 
-  const keywords = extractKeywords(profile.goals);
-  const searchText = (item.name + ' ' + item.description).toLowerCase();
-  const matched = keywords.filter(k => searchText.includes(k)).slice(0, 3);
-  if (matched.length > 0) {
-    parts.push(`Aligns with stated goals around: ${matched.join(', ')}.`);
-  }
+  const totalItems = phases.reduce((s, p) => s + p.items.length, 0);
+  const totalHrs   = phases.reduce((s, p) => {
+    const h = p.title.includes('Workshop') ? HOURS.Workshop
+            : p.title.includes('Course')   ? HOURS.Course
+            : HOURS['Certification Prep'];
+    return s + p.items.length * h;
+  }, 0);
 
-  return parts.length > 0 ? parts.join(' ') : item.description;
+  const statsHtml = [
+    `<span>${phases.length} phase${phases.length > 1 ? 's' : ''}</span>`,
+    `<span class="text-blue-300">·</span>`,
+    `<span>${totalItems} trainings</span>`,
+    `<span class="text-blue-300">·</span>`,
+    `<span>~${totalHrs} hrs total learning time</span>`,
+    profile.products.length > 0
+      ? `<span class="text-blue-300">·</span><span>${profile.products.join(', ')}</span>`
+      : '',
+  ].join('');
+  document.getElementById('pathwayStats').innerHTML = statsHtml;
+
+  // Build phase cards
+  const phaseHtml = phases.map((phase, pIdx) => {
+    const phaseColors = [
+      { dot: '#0176D3', bg: 'from-[#ECF4FF] to-[#F6FAFF]', border: 'border-blue-100' },
+      { dot: '#2E844A', bg: 'from-[#EEF5EA] to-[#F8FBF5]', border: 'border-emerald-100' },
+      { dot: '#CA8A04', bg: 'from-[#FEF9EC] to-[#FEFDF7]', border: 'border-amber-100' },
+    ];
+    const col = phaseColors[pIdx % phaseColors.length];
+
+    const itemsHtml = phase.items.map(item => {
+      const levelCls = LEVEL_BADGE[item.level] || LEVEL_BADGE[''];
+      const typeCls  = TYPE_BADGE[item.type]   || 'bg-slate-100 text-slate-600';
+      const extLink  = item.link
+        ? `<a href="${item.link}" target="_blank" rel="noopener" class="shrink-0 no-print text-[#0176D3] hover:text-[#0257a0] transition-colors" title="Open in Trailhead Academy">
+             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+           </a>`
+        : '';
+      const printUrl = item.link
+        ? `<p class="print-show text-[10px] text-slate-400 mt-0.5" style="display:none">${item.link}</p>`
+        : '';
+      const roleTags = item.matchedRoles.length > 0
+        ? item.matchedRoles.map(r =>
+            `<span class="text-[9px] font-medium px-1.5 py-0.5 rounded-full bg-slate-100 text-slate-500">${r}</span>`
+          ).join('')
+        : '';
+
+      return `
+        <div class="item-row flex gap-3.5 px-5 py-4 border-t border-slate-50 transition-colors">
+          <span class="mt-0.5 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0"
+                style="border:2px solid ${col.dot};color:${col.dot}">${item.globalNum}</span>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-start gap-2">
+              <p class="text-sm font-semibold text-slate-800 leading-snug flex-1">${item.name}</p>
+              ${extLink}
+            </div>
+            <div class="flex flex-wrap items-center gap-1.5 mt-1.5">
+              <span class="text-[10px] font-semibold px-2 py-0.5 rounded-full ${typeCls}">${item.type}</span>
+              ${item.level ? `<span class="text-[10px] font-medium px-2 py-0.5 rounded-full ${levelCls}">${item.level}</span>` : ''}
+              ${item.code  ? `<span class="text-[10px] text-slate-400 font-mono">${item.code}</span>` : ''}
+              ${item.language ? `<span class="text-[10px] text-slate-400">${item.language}</span>` : ''}
+              ${roleTags}
+            </div>
+            <p class="text-xs text-slate-600 mt-2 leading-relaxed">${item.description}</p>
+            ${printUrl}
+          </div>
+        </div>`;
+    }).join('');
+
+    return `
+      <div class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden phase-card">
+        <div class="bg-gradient-to-r ${col.bg} border-b ${col.border} px-5 py-3.5 flex items-center gap-3">
+          <span class="w-7 h-7 rounded-full flex items-center justify-center text-white font-bold text-[11px] shrink-0"
+                style="background:${col.dot}">${phase.phaseNum}</span>
+          <div class="flex-1">
+            <p class="text-sm font-bold text-[#032D60]">${phase.title}</p>
+            <p class="text-[11px] text-slate-500 mt-0.5">${phase.subtitle}</p>
+          </div>
+          <span class="text-[11px] text-slate-400 font-medium no-print">${phase.items.length} item${phase.items.length > 1 ? 's' : ''}</span>
+        </div>
+        ${itemsHtml}
+      </div>`;
+  }).join('');
+
+  document.getElementById('phaseCards').innerHTML = phaseHtml;
+
+  const dateStr = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  document.getElementById('printDate').textContent = `Generated ${dateStr}`;
+  document.getElementById('printCustomerName').textContent = profile.name;
+
+  // Store for copy
+  window._pathwayData = { profile, phases };
+
+  setState('results');
 }
 
 // ================================================================
@@ -362,151 +668,82 @@ function handleSubmit(e) {
   const industry = document.getElementById('industry').value;
   const goals    = document.getElementById('goals').value.trim();
   const maturity = document.querySelector('input[name="maturity"]:checked')?.value;
+  const language = document.querySelector('input[name="language"]:checked')?.value || 'Any';
   const products = [...document.querySelectorAll('input[name="products"]:checked')].map(c => c.value);
+  const roles    = [...document.querySelectorAll('input[name="roles"]:checked')].map(c => c.value);
 
-  if (!tier || !industry || !maturity || products.length === 0 || !goals) {
-    alert('Please complete all fields and select at least one product.');
+  if (!name || !tier || !industry || !maturity || products.length === 0 || !goals) {
+    alert('Please complete all required fields and select at least one product.');
     return;
   }
-
   if (CATALOG.length === 0) {
-    alert('The training catalog is still loading. Please wait a moment and try again.');
+    alert('The training catalog is still loading — please wait a moment and try again.');
     return;
   }
 
-  const maturityLabel = MATURITY_OPTIONS.find(m => m.value === maturity)?.label || maturity;
-  const profile = { name, tier, industry, goals, maturity, maturityLabel, products };
+  setState('loading');
 
-  const scored = CATALOG
-    .filter(c => c.tier.includes(tier))
-    .map(item => ({ item, score: scoreItem(item, profile) }))
-    .filter(({ score }) => score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 7);
+  setTimeout(() => {
+    const profile = { name, tier, industry, goals, maturity, products, roles, language };
+    const phases  = buildPathway(profile);
 
-  if (scored.length === 0) {
-    setState('error');
-    document.getElementById('errorMsg').textContent =
-      'No matching workshops found for this profile. Try selecting more products or adjusting the maturity level.';
-    return;
-  }
+    if (phases.length === 0) {
+      setState('error');
+      document.getElementById('errorMsg').textContent =
+        'No training items matched this profile. Try selecting more products, removing role or language filters, or choosing a different maturity level.';
+      return;
+    }
 
-  const recs = scored.map(({ item }, i) => ({
-    id: item.id,
-    name: item.name,
-    priority: i + 1,
-    rationale: buildRationale(item, profile)
-  }));
-
-  renderResults({ name, tier, industry, maturity: maturityLabel, products, goals }, recs);
+    renderPathway(profile, phases);
+  }, 180);
 }
 
 // ================================================================
-// RENDER RESULTS
-// ================================================================
-function renderResults(profile, recs) {
-  recs.sort((a, b) => a.priority - b.priority);
-
-  document.getElementById('resultsHeading').textContent = `${profile.name} · Recommendations`;
-  document.getElementById('resultsSubhead').textContent =
-    `${profile.tier} · ${profile.industry} · ${profile.maturity} · ${recs.length} trainings selected`;
-
-  const priorityColors = [
-    '#0176D3','#0257a0','#1a7fd4','#3d9bd9','#64aee0','#8ec4ea','#b8d9f2'
-  ];
-
-  const typeStyle = {
-    'Workshop':           'bg-violet-100 text-violet-700',
-    'Course':             'bg-emerald-100 text-emerald-700',
-    'Certification Prep': 'bg-amber-100 text-amber-700',
-  };
-
-  const html = recs.map((rec, i) => {
-    const item = CATALOG.find(c => c.id === rec.id);
-    if (!item) return '';
-    const color = priorityColors[i] || '#b8d9f2';
-    const badge = typeStyle[item.type] || 'bg-slate-100 text-slate-600';
-    const linkHtml = item.link
-      ? `<a href="${item.link}" target="_blank" rel="noopener"
-           class="shrink-0 text-blue-400 hover:text-blue-600 transition-colors ml-2" title="Open training">
-           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-             <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-           </svg></a>`
-      : '';
-    return `
-      <div class="bg-white rounded-xl border border-slate-100 shadow-sm p-4 card">
-        <div class="flex items-start gap-3">
-          <span class="priority-dot mt-0.5" style="background:${color}">${rec.priority}</span>
-          <div class="flex-1 min-w-0">
-            <div class="flex items-start justify-between gap-2">
-              <p class="text-sm font-semibold text-slate-800 leading-snug">${item.name}</p>
-              ${linkHtml}
-            </div>
-            <div class="flex items-center gap-2 mt-1 flex-wrap">
-              <span class="text-[11px] font-medium px-2 py-0.5 rounded-full ${badge}">${item.type}</span>
-              ${item.code ? `<span class="text-[11px] text-slate-400 font-mono">${item.code}</span><span class="text-[11px] text-slate-300">·</span>` : ''}
-              <span class="text-[11px] text-slate-400">${item.format}</span>
-            </div>
-            <p class="text-xs text-slate-600 mt-2.5 leading-relaxed">${rec.rationale}</p>
-          </div>
-        </div>
-      </div>`;
-  }).join('');
-
-  document.getElementById('cards').innerHTML = html;
-
-  // Store for copy
-  window._recData = { profile, recs };
-
-  setState('results');
-}
-
-// ================================================================
-// COPY OUTPUT
+// COPY FOR EMAIL
 // ================================================================
 function copyOutput() {
-  if (!window._recData) return;
-  const { profile, recs } = window._recData;
-  const sorted = [...recs].sort((a, b) => a.priority - b.priority);
+  if (!window._pathwayData) return;
+  const { profile, phases } = window._pathwayData;
+  const maturityLabel = MATURITY_OPTIONS.find(m => m.value === profile.maturity)?.label || profile.maturity;
   const date = new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 
-  let text = `Training Recommendations — ${profile.name}\n`;
-  text += `${profile.tier} · ${profile.industry} · ${profile.maturity}\n`;
+  let text = `TRAINING PATHWAY — ${profile.name.toUpperCase()}\n`;
+  text += `${profile.tier}  ·  ${profile.industry}  ·  ${maturityLabel}\n`;
+  text += `Products: ${profile.products.join(', ')}\n`;
+  if (profile.roles.length)    text += `Roles: ${profile.roles.join(', ')}\n`;
+  if (profile.language !== 'Any') text += `Language: ${profile.language}\n`;
   text += `Generated: ${date}\n`;
-  text += '─'.repeat(52) + '\n\n';
+  text += '═'.repeat(56) + '\n\n';
 
-  sorted.forEach((rec, i) => {
-    const item = CATALOG.find(c => c.id === rec.id);
-    if (!item) return;
-    text += `${i + 1}. ${item.name} [${item.type}]\n`;
-    text += `   ${[item.code, item.format].filter(Boolean).join('  ·  ')}\n`;
-    text += `   ${rec.rationale}\n`;
-    if (item.link) text += `   → ${item.link}\n`;
+  phases.forEach(phase => {
+    text += `${phase.title.toUpperCase()}\n${phase.subtitle}\n${'─'.repeat(44)}\n\n`;
+    phase.items.forEach(item => {
+      text += `${item.globalNum}. ${item.name}\n`;
+      text += `   ${[item.code, item.type, item.level, item.language].filter(Boolean).join('  ·  ')}\n`;
+      text += `   ${item.description}\n`;
+      if (item.link) text += `   → ${item.link}\n`;
+      text += '\n';
+    });
     text += '\n';
   });
 
   navigator.clipboard.writeText(text).then(() => {
     const btn = document.getElementById('copyBtn');
     const orig = btn.innerHTML;
-    btn.textContent = '✓ Copied to clipboard';
-    btn.classList.add('text-green-600', 'border-green-300', 'bg-green-50');
-    setTimeout(() => {
-      btn.innerHTML = orig;
-      btn.classList.remove('text-green-600', 'border-green-300', 'bg-green-50');
-    }, 2500);
+    btn.textContent = '✓ Copied';
+    btn.classList.add('bg-green-600', 'border-green-600');
+    setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('bg-green-600', 'border-green-600'); }, 2500);
   });
 }
 
 // ================================================================
 // STATE HELPER
 // ================================================================
-function setState(state) {
+function setState(s) {
   const map = { empty: 'stateEmpty', loading: 'stateLoading', error: 'stateError', results: 'stateResults' };
   Object.values(map).forEach(id => document.getElementById(id).classList.add('hidden'));
-  document.getElementById(map[state]).classList.remove('hidden');
+  document.getElementById(map[s]).classList.remove('hidden');
 }
-
 </script>
 </body>
 </html>
