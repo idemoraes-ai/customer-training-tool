@@ -1,69 +1,9 @@
 {
-  "generated": "2026-10-14T16:36:57Z",
-  "count": 237,
+  "generated": "2026-10-14T17:08:48Z",
+  "count": 202,
   "courses": [
     {
       "id": 1,
-      "code": "COH002J",
-      "name": "Account Engagement : 簡単自走支援プログラム - COH002J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Marketing Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Account Engagement : 簡単自走支援プログラム - COH002J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/coh002j-cohort-account-engagement"
-    },
-    {
-      "id": 2,
-      "code": "PDX102",
-      "name": "Account Engagement コンサルタント - PDX102",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Marketing Cloud"
-      ],
-      "roles": [
-        "Marketer",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "Account Engagement コンサルタント - PDX102",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/pdx102-pardot-consultant"
-    },
-    {
-      "id": 3,
       "code": "SDC017",
       "name": "Activate Enterprise Knowledge for Agentforce with Data 360 - SDC017",
       "type": "Course",
@@ -93,7 +33,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc017-activate-enterprise-knowledge-for-agentforce-with-data-360---sdc017"
     },
     {
-      "id": 4,
+      "id": 2,
       "code": "IND330",
       "name": "Administer Financial Services Cloud Solutions - IND330",
       "type": "Course",
@@ -121,7 +61,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ind330-administer-financial-services-cloud-solutions"
     },
     {
-      "id": 5,
+      "id": 3,
       "code": "ADX361",
       "name": "Administer Intelligent Service Cloud Solutions - ADX361",
       "type": "Course",
@@ -150,7 +90,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx361-administer-intelligent-service-cloud-solutions"
     },
     {
-      "id": 6,
+      "id": 4,
       "code": "ADX211",
       "name": "Administer, Extend, and Automate Salesforce - ADX211",
       "type": "Course",
@@ -180,7 +120,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx211-administer,-extend,-and-automate-salesforce"
     },
     {
-      "id": 7,
+      "id": 5,
       "code": "SDC010",
       "name": "Advance Your Data 360 Identity Resolution Skills - SDC010",
       "type": "Course",
@@ -208,37 +148,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc010-advance-your-data-360-identity-resolution-skills---sdc010"
     },
     {
-      "id": 8,
-      "code": "AGT402J",
-      "name": "Agentforce : Employee Agentを触ってみよう - AGT402J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator",
-        "Consultant",
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Agentforce : Employee Agentを触ってみよう - AGT402J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/agt402j-employee-agent-activation-workshop---agt402j"
-    },
-    {
-      "id": 9,
+      "id": 6,
       "code": "AGT402K",
       "name": "Agentforce : Employee Agent를 사용해 보기 - AGT402K",
       "type": "Course",
@@ -268,38 +178,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt402k-employee-agent-activation-workshop---agt402k"
     },
     {
-      "id": 10,
-      "code": "AFS001J",
-      "name": "Agentforce : Prompt Builderを触ってみよう - AFS001J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator",
-        "Architect",
-        "Consultant",
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Agentforce : Prompt Builderを触ってみよう - AFS001J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/afs001j-get-started-with-prompt-builder"
-    },
-    {
-      "id": 11,
+      "id": 7,
       "code": "AFS001K",
       "name": "Agentforce : Prompt Builder를 사용해보기 - AFS001K",
       "type": "Course",
@@ -330,35 +209,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs001k-get-started-with-prompt-builder"
     },
     {
-      "id": 12,
-      "code": "AFS003J",
-      "name": "Agentforce : RAG による Agentforce のサービス向上 - AFS003J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building",
-        "optimizing",
-        "strategic"
-      ],
-      "level": "",
-      "language": "Japanese",
-      "description": "Agentforce : RAG による Agentforce のサービス向上 - AFS003J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/afs003j-elevate-agentforce-for-service-with-rag--afs003-"
-    },
-    {
-      "id": 13,
+      "id": 8,
       "code": "AFS003K",
       "name": "Agentforce : RAG를 통한 Agentforce 서비스 향상 - AFS003K",
       "type": "Course",
@@ -386,38 +237,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs003k-elevate-agentforce-for-service-with-rag--afs003k-"
     },
     {
-      "id": 14,
-      "code": "AFS002J",
-      "name": "Agentforce : Service Agentを触ってみよう - AFS002J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator",
-        "Architect",
-        "Consultant",
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "Agentforce : Service Agentを触ってみよう - AFS002J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/afs002j-get-started-with-agentforce-for-service"
-    },
-    {
-      "id": 15,
+      "id": 9,
       "code": "AFS002K",
       "name": "Agentforce : Service Agent를 사용해 보기 - AFS002K",
       "type": "Course",
@@ -448,95 +268,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs002k-get-started-with-agentforce-for-service"
     },
     {
-      "id": 16,
-      "code": "AGT404J-2",
-      "name": "Agentforce : セールスコーチングを触ってみよう - AGT404J-2",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Agentforce : セールスコーチングを触ってみよう - AGT404J-2",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/agt404j2-salesagent-activationworkshop-"
-    },
-    {
-      "id": 17,
-      "code": "AFS101J",
-      "name": "Agentforce : ユースケース選定 - AFS101J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Agentforce : ユースケース選定 - AFS101J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/afs101j-agentforce-quick-start"
-    },
-    {
-      "id": 18,
-      "code": "AFS010J",
-      "name": "Agentforce : 新しいAgentforce Builder 入門 - AFS010J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Agentforce : 新しいAgentforce Builder 入門 - AFS010J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/afs010j-get-started-with-agent-script-to-create-a-service-agent---afs010j"
-    },
-    {
-      "id": 19,
+      "id": 10,
       "code": "AFS010K",
       "name": "Agentforce : 새로운 Agentforce Builder 입문 - AFS010K",
       "type": "Course",
@@ -565,35 +297,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs010k-get-started-with-agent-script-to-create-a-service-agent---afs010k"
     },
     {
-      "id": 20,
-      "code": "AFS201J",
-      "name": "Agentforce Basics: Understanding Generative AI and the Agent Landscape - AFS201J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [
-        "Administrator"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Agentforce Basics: Understanding Generative AI and the Agent Landscape - AFS201J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/afs201j-build-agentic-experiences-using-agentforce"
-    },
-    {
-      "id": 21,
+      "id": 11,
       "code": "AGT505",
       "name": "Agentforce Observability - AGT505",
       "type": "Course",
@@ -624,7 +328,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt505-agentforce-observability---agt505"
     },
     {
-      "id": 22,
+      "id": 12,
       "code": "AFS401",
       "name": "Agentforce Service Specialist - AFS401",
       "type": "Course",
@@ -653,7 +357,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs401-agentforce-for-service-specialist---afs401"
     },
     {
-      "id": 23,
+      "id": 13,
       "code": "AGT501",
       "name": "Agentforce Vision and Use Cases - AGT501",
       "type": "Course",
@@ -684,35 +388,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt501-agentforce-vision-and-use-cases---agt501"
     },
     {
-      "id": 24,
-      "code": "AGT404J-1",
-      "name": "Agentforce：Agentforce Sales Development （Lead Nurturing）入門 – AGT404J-1",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Agentforce"
-      ],
-      "roles": [],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building",
-        "optimizing",
-        "strategic"
-      ],
-      "level": "",
-      "language": "Japanese",
-      "description": "Agentforce：Agentforce Sales Development （Lead Nurturing）入門 – AGT404J-1",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/agt404j-1-get-started-with-agentforce-sales-development---agt404j-1"
-    },
-    {
-      "id": 25,
+      "id": 14,
       "code": "MSA007",
       "name": "Agentic Acceleration: Activating Your AI Network with MuleSoft Agent Fabric - MSA007",
       "type": "Course",
@@ -744,7 +420,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/msa007-tame-the-chaos--orchestrating-ai-with-mulesoft-agent-fabric---msa007"
     },
     {
-      "id": 26,
+      "id": 15,
       "code": "ARC730",
       "name": "Anypoint Platform Architecture: Integration Solutions - ARC730",
       "type": "Course",
@@ -772,7 +448,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ARC730-mulesoft-architecture-integration-solutions"
     },
     {
-      "id": 27,
+      "id": 16,
       "code": "DEX401",
       "name": "Anypoint Platform Development: Fundamentals - DEX401",
       "type": "Course",
@@ -800,7 +476,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/DEX401-mulesoft-development-fundamentals"
     },
     {
-      "id": 28,
+      "id": 17,
       "code": "DEX406",
       "name": "Anypoint Platform Development: Fundamentals Using Anypoint Code Builder - DEX406",
       "type": "Course",
@@ -829,7 +505,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/dex406-anypoint-platform-development--fundamentals-using-anypoint-code-builder---dex406"
     },
     {
-      "id": 29,
+      "id": 18,
       "code": "DEX660",
       "name": "Anypoint Platform Development: Production-Ready Development Practices - DEX660",
       "type": "Course",
@@ -858,7 +534,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/DEX660-mulesoft-production-ready-development-practices"
     },
     {
-      "id": 30,
+      "id": 19,
       "code": "DEX670",
       "name": "Anypoint Platform Development: Production-Ready Integrations - DEX670",
       "type": "Course",
@@ -887,7 +563,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/DEX670-mulesoft-production-ready-integrations"
     },
     {
-      "id": 31,
+      "id": 20,
       "code": "OPS325",
       "name": "Anypoint Platform Operations: CloudHub 2.0 - OPS325",
       "type": "Course",
@@ -916,7 +592,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/OPS325-mulesoft-operations-cloudhub2"
     },
     {
-      "id": 32,
+      "id": 21,
       "code": "OPS335",
       "name": "Anypoint Platform Operations: Runtime Fabric on Self-Managed Kubernetes - OPS335",
       "type": "Course",
@@ -946,7 +622,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/OPS335-mulesoft-operations-runtime-fabric-kubernetes"
     },
     {
-      "id": 33,
+      "id": 22,
       "code": "OPS350",
       "name": "Anypoint Platform Operations: Universal API Management - OPS350",
       "type": "Course",
@@ -976,7 +652,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/OPS350-mulesoft-operations-univeral-api-management"
     },
     {
-      "id": 34,
+      "id": 23,
       "code": "ADX301",
       "name": "Automate No-Code Solutions Using Flow - ADX301",
       "type": "Course",
@@ -1004,7 +680,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx301-automate-no-code-solutions-using-flow"
     },
     {
-      "id": 35,
+      "id": 24,
       "code": "REV001",
       "name": "Automate Product-to-Cash with Revenue Cloud - REV001",
       "type": "Course",
@@ -1035,7 +711,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev001-product-to-cash-automation-with-the-new-revenue-cloud"
     },
     {
-      "id": 36,
+      "id": 25,
       "code": "CCD102",
       "name": "B2C Commerce Developer with SFRA - CCD102",
       "type": "Course",
@@ -1063,7 +739,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ccd102-b2c-commerce-developer-with-sfra"
     },
     {
-      "id": 37,
+      "id": 26,
       "code": "ADX013",
       "name": "Beyond Object Permissions: Control Record Access in Salesforce - ADX013",
       "type": "Course",
@@ -1099,7 +775,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx013-beyond-object-permissions--control-record-access-in-salesforce--adx013-"
     },
     {
-      "id": 38,
+      "id": 27,
       "code": "AGT590",
       "name": "Build a Service Agent using Agentforce Builder and Agent Script - AGT590",
       "type": "Course",
@@ -1129,7 +805,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt590-build-service-agent-using-agentforce-builder-and-agent-script---agt590"
     },
     {
-      "id": 39,
+      "id": 28,
       "code": "MKT101",
       "name": "Build and Analyze Customer Journeys using Marketing Cloud - MKT101",
       "type": "Course",
@@ -1158,7 +834,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/mkt101-build-and-analyze-customer-journeys-using-marketing-cloud"
     },
     {
-      "id": 40,
+      "id": 29,
       "code": "DGN001",
       "name": "Build and Deploy Document Generation Templates - DGN001",
       "type": "Course",
@@ -1187,7 +863,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/dgn001-build-and-deploy-document-generation-templates"
     },
     {
-      "id": 41,
+      "id": 30,
       "code": "DEX450",
       "name": "Build Applications Programmatically on the Salesforce Platform - DEX450",
       "type": "Course",
@@ -1215,7 +891,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/dex450-build-applications-programmatically-on-the-salesforce-platform"
     },
     {
-      "id": 42,
+      "id": 31,
       "code": "OMS435",
       "name": "Build Guided Experiences with Omnistudio - OMS435",
       "type": "Course",
@@ -1243,7 +919,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/oms435-build-guided-experiences-with-omnistudio"
     },
     {
-      "id": 43,
+      "id": 32,
       "code": "OMS001",
       "name": "Build Omnistudio Components with Standard Designers - OMS001",
       "type": "Course",
@@ -1274,7 +950,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/oms001-build-omnistudio-components-with-designers-on-core---oms001"
     },
     {
-      "id": 44,
+      "id": 33,
       "code": "REV011",
       "name": "Build Quotes with Agents in Revenue Cloud - REV011",
       "type": "Course",
@@ -1304,7 +980,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev011-build-quotes-with-agents-in-agentforce-revenue-management---rev011"
     },
     {
-      "id": 45,
+      "id": 34,
       "code": "SSC005",
       "name": "Build Reports and Dashboards in Agentforce Sales- SSC005",
       "type": "Course",
@@ -1335,7 +1011,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ssc005-build-reports-and-dashboards-in-sales-cloud--ssc005-"
     },
     {
-      "id": 46,
+      "id": 35,
       "code": "ADX350",
       "name": "Build Salesforce Hyperautomation Solutions with MuleSoft - ADX350",
       "type": "Course",
@@ -1368,7 +1044,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx350-build-salesforce-hyperautomation-solutions-with-mulesoft"
     },
     {
-      "id": 47,
+      "id": 36,
       "code": "REV009",
       "name": "Building Contracts in Revenue Cloud - REV009",
       "type": "Course",
@@ -1397,7 +1073,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev009-building-contracts-in-agentforce-revenue-management---rev009"
     },
     {
-      "id": 48,
+      "id": 37,
       "code": "ANC201",
       "name": "Building Lenses, Dashboards, and Apps in CRM Analytics - ANC201",
       "type": "Course",
@@ -1425,7 +1101,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/anc201-building-lenses,-dashboards,-and-apps-in-crm-analytics"
     },
     {
-      "id": 49,
+      "id": 38,
       "code": "TAB004",
       "name": "Collaborate with a Tableau Site - TAB004",
       "type": "Course",
@@ -1453,7 +1129,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/tab004-collaborate-with-a-tableau-site---tab004"
     },
     {
-      "id": 50,
+      "id": 39,
       "code": "LSC004",
       "name": "Configure Content Management in Life Sciences Cloud for Customer Engagement - LSC004",
       "type": "Course",
@@ -1481,7 +1157,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/lsc004-configure-content-management-in-lsc-for-customer-engagement---lsc004"
     },
     {
-      "id": 51,
+      "id": 40,
       "code": "REV012",
       "name": "Configure Revenue Cloud Billing to Optimize each Customer Touchpoint - REV012",
       "type": "Course",
@@ -1510,7 +1186,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev012-configure-revenue-cloud-billing-to-optimize-each-customer-touchpoint---rev012"
     },
     {
-      "id": 52,
+      "id": 41,
       "code": "LSC005",
       "name": "Configure Samples Management in Life Sciences Cloud for Customer Engagement - LSC005",
       "type": "Course",
@@ -1538,7 +1214,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/lsc005-configure-samples-management-in-agentforce-life-sciences-for-customer-engagement--lsc005-"
     },
     {
-      "id": 53,
+      "id": 42,
       "code": "B2C002",
       "name": "Configure Sort Options to Drive B2C Conversions - B2C002",
       "type": "Course",
@@ -1566,7 +1242,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/b2c002-configure-sort-options-to-drive-b2c-conversions---b2c002"
     },
     {
-      "id": 54,
+      "id": 43,
       "code": "ASC010",
       "name": "Create a Help Center with Agentforce for Service and Experience Cloud - ASC010",
       "type": "Course",
@@ -1595,7 +1271,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc010-create-a-help-center-with-agentforce-for-service-and-experience-cloud---asc010"
     },
     {
-      "id": 55,
+      "id": 44,
       "code": "REV004",
       "name": "Create Customized Pricing with Revenue Cloud - REV004",
       "type": "Course",
@@ -1625,7 +1301,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev004-create-customized-pricing-with-revenue-cloud---rev004"
     },
     {
-      "id": 56,
+      "id": 45,
       "code": "REV003",
       "name": "Customize Product Components and Attributes with Revenue Cloud Configurator - REV003",
       "type": "Course",
@@ -1656,38 +1332,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev003-customize-product-components-and-attributes-with-revenue-cloud-configurator---rev003"
     },
     {
-      "id": 57,
-      "code": "SDC001J",
-      "name": "Data 360 : データ接続・整形・統合 - SDC001J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Data Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Data 360 : データ接続・整形・統合 - SDC001J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/sdc001j-get-started-with-data-360"
-    },
-    {
-      "id": 58,
+      "id": 46,
       "code": "SDC008",
       "name": "Data 360 Implementation and Use Case Planning - SDC008",
       "type": "Course",
@@ -1718,7 +1363,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc008-data-360-implementation-and-use-case-planning---sdc008"
     },
     {
-      "id": 59,
+      "id": 47,
       "code": "SDC014",
       "name": "Data 360 with Agentforce Implementation Use Case Planning - SDC014",
       "type": "Course",
@@ -1750,124 +1395,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc014-data-360-with-agentforce-implementation-use-case-planning---sdc014"
     },
     {
-      "id": 60,
-      "code": "SDC017J",
-      "name": "Data 360：Agentforce のためのエンタープライズナレッジを有効化 - SDC017J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Data Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Data Analyst"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "Data 360：Agentforce のためのエンタープライズナレッジを有効化 - SDC017J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/sdc017j-activate-enterprise-knowledge-for-agentforce-with-data-360"
-    },
-    {
-      "id": 61,
-      "code": "SDC005J",
-      "name": "Data 360：クレジットを理解しよう - SDC005J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Data Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "Data 360：クレジットを理解しよう - SDC005J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/sdc005j-explore-credit-consumption-estimation-in-data-360"
-    },
-    {
-      "id": 62,
-      "code": "SDC003J",
-      "name": "Data 360：セグメントと有効化 - SDC003J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Data Cloud"
-      ],
-      "roles": [
-        "Administrator"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Data 360：セグメントと有効化 - SDC003J",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/sdc003j-segment-and-activate-data-in-data-360"
-    },
-    {
-      "id": 63,
-      "code": "SDC004J",
-      "name": "Data 360：データガバナンス入門 - SDC004J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Data Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。 その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示通貨を「日本円」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/sdc004j-get-started-with-data-360-governance"
-    },
-    {
-      "id": 64,
+      "id": 48,
       "code": "OMS335",
       "name": "Design and Administer an Omnistudio Solution - OMS335",
       "type": "Course",
@@ -1898,7 +1426,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/oms335-design-and-administer-an-omnistudio-solution"
     },
     {
-      "id": 65,
+      "id": 49,
       "code": "SDC301",
       "name": "Design and Build Effective Solutions with Data 360 - SDC301",
       "type": "Course",
@@ -1926,7 +1454,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc301-design-and-build-effective-solutions-with-data-cloud---sdc301"
     },
     {
-      "id": 66,
+      "id": 50,
       "code": "ARC101",
       "name": "Design and Build Integration Solutions - ARC101",
       "type": "Course",
@@ -1955,7 +1483,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/arc101-design-and-build-integration-solutions"
     },
     {
-      "id": 67,
+      "id": 51,
       "code": "MKT201",
       "name": "Design Data-Driven Marketing Cloud Solutions - MKT201",
       "type": "Course",
@@ -1984,7 +1512,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/mkt201-design-data-driven-marketing-cloud-solutions"
     },
     {
-      "id": 68,
+      "id": 52,
       "code": "TAB101",
       "name": "Discover Data Insights with Tableau - TAB101",
       "type": "Course",
@@ -2010,7 +1538,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/tab101-discover-data-insights-with-tableau"
     },
     {
-      "id": 69,
+      "id": 53,
       "code": "SDC101",
       "name": "Discover Salesforce Data 360 Fundamentals - SDC101",
       "type": "Course",
@@ -2040,7 +1568,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc101-discover-salesforce-data-cloud-fundamentals"
     },
     {
-      "id": 70,
+      "id": 54,
       "code": "REV007",
       "name": "Drive Revenue with Usage-Based Products in Revenue Cloud - REV007",
       "type": "Workshop",
@@ -2070,7 +1598,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev007-drive-revenue-with-usage-based-products-in-agentforce-revenue-management---rev007"
     },
     {
-      "id": 71,
+      "id": 55,
       "code": "PDX101",
       "name": "Drive Sales with Account Engagement - PDX101",
       "type": "Course",
@@ -2100,7 +1628,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/pdx101-drive-sales-with-account-engagement"
     },
     {
-      "id": 72,
+      "id": 56,
       "code": "AGT502",
       "name": "Employee Agent Activation - AGT502",
       "type": "Workshop",
@@ -2131,7 +1659,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt502-employee-agent-activation---agt502"
     },
     {
-      "id": 73,
+      "id": 57,
       "code": "MSA002",
       "name": "Empower Agents with APIs using MuleSoft for Agentforce: API Catalog - MSA002",
       "type": "Workshop",
@@ -2162,7 +1690,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/msa002-empower-agents-with-apis-using-mulesoft-for-agentforce-api-catalog"
     },
     {
-      "id": 74,
+      "id": 58,
       "code": "MSA001",
       "name": "Enable APIs with Topics and Actions using MuleSoft for Agentforce: Topic Center - MSA001",
       "type": "Workshop",
@@ -2191,7 +1719,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/msa001-enable-apis-with-topics-and-actions-using-mulesoft-for-agentforce-topic-center"
     },
     {
-      "id": 75,
+      "id": 59,
       "code": "MKT001",
       "name": "Engage Your Audience with Interactive Email in Marketing Cloud Engagement - MKT001",
       "type": "Workshop",
@@ -2222,7 +1750,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/mkt001-engage-your-audience-with-marketing-cloud-interactive-emails"
     },
     {
-      "id": 76,
+      "id": 60,
       "code": "LSC002",
       "name": "Engagement Planning and Execution in Life Sciences for Customer Engagement - LSC002",
       "type": "Workshop",
@@ -2250,7 +1778,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/lsc002-engagement-planning-and-execution-in-life-sciences-for-customer-engagement---lsc002"
     },
     {
-      "id": 77,
+      "id": 61,
       "code": "MOC004",
       "name": "Enhance Account Engagement with Marketing Cloud Next - MOC004",
       "type": "Workshop",
@@ -2278,7 +1806,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/moc004-enhance-account-engagement-with-marketing-cloud-growth-and-advanced---moc004"
     },
     {
-      "id": 78,
+      "id": 62,
       "code": "B2C001",
       "name": "Enhance B2C Site Search to Drive Sales and Shopper Satisfaction - B2C001",
       "type": "Workshop",
@@ -2306,7 +1834,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/b2c001-enhance-b2c-site-search-to-drive-sales-and-shopper-satisfaction---b2c001"
     },
     {
-      "id": 79,
+      "id": 63,
       "code": "MSA003",
       "name": "Enhance Data Extraction using Einstein with MuleSoft IDP - MSA003",
       "type": "Workshop",
@@ -2334,7 +1862,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/msa003-enhance-data-extraction-using-einstein-with-mulesoft-idp"
     },
     {
-      "id": 80,
+      "id": 64,
       "code": "ADX201",
       "name": "Essentials for New Platform System Administrators - ADX201",
       "type": "Course",
@@ -2365,7 +1893,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx201-essentials-for-new-lightning-experience-administrators"
     },
     {
-      "id": 81,
+      "id": 65,
       "code": "REV008",
       "name": "Expand Billing Functionality with Revenue Cloud - REV008",
       "type": "Workshop",
@@ -2394,7 +1922,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev008-expand-billing-functionality-with-agentforce-revenue-management---rev008"
     },
     {
-      "id": 82,
+      "id": 66,
       "code": "SDC005",
       "name": "Explore Credit Consumption Estimation in Data 360 - SDC005",
       "type": "Workshop",
@@ -2424,7 +1952,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc005-explore-credit-consumption-estimation-in-data-cloud--sdc005-"
     },
     {
-      "id": 83,
+      "id": 67,
       "code": "SDC021",
       "name": "Fueling Agentforce with Intelligent Context - SDC021",
       "type": "Workshop",
@@ -2454,7 +1982,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc021-fueling-agentforce-with-intelligent-context---sdc021"
     },
     {
-      "id": 84,
+      "id": 68,
       "code": "AFS006",
       "name": "Get Started with Agentforce for Service on Email - AFS006",
       "type": "Workshop",
@@ -2483,7 +2011,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs006-get-started-with-asa-on-email---afs006"
     },
     {
-      "id": 85,
+      "id": 69,
       "code": "ASC009",
       "name": "Get Started with Agentforce Service Assistant - ASC009",
       "type": "Workshop",
@@ -2512,7 +2040,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc009-get-started-with-agenforce-service-assistant---asc009"
     },
     {
-      "id": 86,
+      "id": 70,
       "code": "TNX002",
       "name": "Get Started with Agentic Analytics in Tableau Next - TNX002",
       "type": "Workshop",
@@ -2540,7 +2068,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/tnx002-get-started-with-agentic-analytics-in-tableau-next---tnx002"
     },
     {
-      "id": 87,
+      "id": 71,
       "code": "PDX001",
       "name": "Get Started with AI Content Creation for Account Engagement - PDX001",
       "type": "Workshop",
@@ -2568,7 +2096,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/pdx001-get-started-with-ai-content-creation-for-account-engagement"
     },
     {
-      "id": 88,
+      "id": 72,
       "code": "MKT002",
       "name": "Get Started with AMPscript in Marketing Cloud Engagement - MKT002",
       "type": "Workshop",
@@ -2598,7 +2126,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/mkt002-get-started-with-ampscript-in-marketing-cloud"
     },
     {
-      "id": 89,
+      "id": 73,
       "code": "MAX155",
       "name": "Get Started with Anypoint Platform and Anypoint Code Builder - MAX155",
       "type": "Course",
@@ -2626,7 +2154,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/max155-get-started-with-anypoint-platform-and-anypoint-code-builder---max155"
     },
     {
-      "id": 90,
+      "id": 74,
       "code": "MOC001",
       "name": "Get Started with Campaign Creation and Agentforce in Marketing Cloud - MOC001",
       "type": "Workshop",
@@ -2654,7 +2182,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/moc001-get-started-with-campaign-creation-and-agentforce-in-marketing-cloud"
     },
     {
-      "id": 91,
+      "id": 75,
       "code": "ASC001",
       "name": "Get Started with Case Management in Agentforce for Service - ASC001",
       "type": "Workshop",
@@ -2682,7 +2210,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc001-get-started-with-case-management-in-service-cloud---asc001"
     },
     {
-      "id": 92,
+      "id": 76,
       "code": "MOC002",
       "name": "Get Started with Cross-Channel Flows in Marketing Cloud Next - MOC002",
       "type": "Workshop",
@@ -2710,7 +2238,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/moc002-get-started-with-cross-channel-flows-in-marketing-cloud---moc002"
     },
     {
-      "id": 93,
+      "id": 77,
       "code": "MOC003",
       "name": "Get Started with Custom Agentforce Actions for Marketing - MOC003",
       "type": "Workshop",
@@ -2739,7 +2267,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/moc003-get-started-with-custom-agentforce-actions-for-marketing"
     },
     {
-      "id": 94,
+      "id": 78,
       "code": "SDC013",
       "name": "Get Started with Data 360 and Tableau Next - SDC013",
       "type": "Workshop",
@@ -2768,7 +2296,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc013-get-started-with-data-360-and-tableau-next---sdc013"
     },
     {
-      "id": 95,
+      "id": 79,
       "code": "SDC004",
       "name": "Get Started with Data 360 Governance - SDC004",
       "type": "Workshop",
@@ -2796,7 +2324,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc004-get-started-with-data-cloud-governance-sdc004"
     },
     {
-      "id": 96,
+      "id": 80,
       "code": "ASC008",
       "name": "Get Started with Einstein for Service - ASC008",
       "type": "Workshop",
@@ -2824,7 +2352,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc008-get-started-with-einstein-for-service"
     },
     {
-      "id": 97,
+      "id": 81,
       "code": "ASC007",
       "name": "Get Started with Enhanced Chat - ASC007",
       "type": "Workshop",
@@ -2852,7 +2380,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc007-get-started-with-messaging-for-in-app-web"
     },
     {
-      "id": 98,
+      "id": 82,
       "code": "SFS001",
       "name": "Get Started with Field Service Cloud Scheduling and Optimization - SFS001",
       "type": "Workshop",
@@ -2880,7 +2408,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sfs001-get-started-with-field-service-scheduling---optimization---sfs001"
     },
     {
-      "id": 99,
+      "id": 83,
       "code": "MKT004",
       "name": "Get Started with Marketing Cloud Engagement+ - MKT004",
       "type": "Workshop",
@@ -2910,7 +2438,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/mkt004-get-started-with-marketing-cloud-engagement----mkt004"
     },
     {
-      "id": 100,
+      "id": 84,
       "code": "ASC005",
       "name": "Get Started with Omni-Channel Flow - ASC005",
       "type": "Workshop",
@@ -2938,7 +2466,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc005-get-started-with-omni-channel-flow---asc005"
     },
     {
-      "id": 101,
+      "id": 85,
       "code": "ADX009",
       "name": "Get Started with Record-Triggered Flows - ADX009",
       "type": "Workshop",
@@ -2969,7 +2497,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx009-get-started-with-record-triggered-flows---adx009"
     },
     {
-      "id": 102,
+      "id": 86,
       "code": "ASC004",
       "name": "Get Started with Salesforce Lightning Knowledge - ASC004",
       "type": "Workshop",
@@ -2997,7 +2525,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc004-get-started-with-salesforce-lightning-knowledge---asc004"
     },
     {
-      "id": 103,
+      "id": 87,
       "code": "ADX011",
       "name": "Get Started with Screen Flows - ADX011",
       "type": "Workshop",
@@ -3028,7 +2556,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx011-get-started-with-screen-flows---adx011"
     },
     {
-      "id": 104,
+      "id": 88,
       "code": "ADX010",
       "name": "Get Started with Secure User Management for Admins - ADX010",
       "type": "Workshop",
@@ -3059,7 +2587,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx010-get-started-with-secure-user-management---adx010"
     },
     {
-      "id": 105,
+      "id": 89,
       "code": "MAX150",
       "name": "Getting Started with Anypoint Platform - MAX150",
       "type": "Course",
@@ -3087,7 +2615,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/MAX150-mulesoft-getting-started-mule4"
     },
     {
-      "id": 106,
+      "id": 90,
       "code": "MKT003",
       "name": "Go Beyond AMPscript Basics in Marketing Cloud Engagement - MKT003",
       "type": "Workshop",
@@ -3115,7 +2643,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/mkt003-go-beyond-ampscript-basics-in-marketing-cloud"
     },
     {
-      "id": 107,
+      "id": 91,
       "code": "ANC301",
       "name": "Implement and Manage CRM Analytics - ANC301",
       "type": "Course",
@@ -3144,7 +2672,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/anc301-implement-and-manage-crm-analytics"
     },
     {
-      "id": 108,
+      "id": 92,
       "code": "FSL201",
       "name": "Implement Salesforce Field Service - FSL201",
       "type": "Course",
@@ -3173,7 +2701,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/fsl201-implement-salesforce-field-service"
     },
     {
-      "id": 109,
+      "id": 93,
       "code": "ASC003",
       "name": "Improve Agent Productivity with Macros, Templates, and Quick Text - ASC003",
       "type": "Workshop",
@@ -3201,7 +2729,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc003-improve-agent-productivity-with-macros--templates--and-quick-text---asc003"
     },
     {
-      "id": 110,
+      "id": 94,
       "code": "SDC001",
       "name": "Ingest, Harmonize, and Unify Data with Data 360 - SDC001",
       "type": "Workshop",
@@ -3232,7 +2760,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc001-get-started-with-data-cloud"
     },
     {
-      "id": 111,
+      "id": 95,
       "code": "DSF001",
       "name": "Introduction to Discovery Framework - DSF001",
       "type": "Workshop",
@@ -3260,7 +2788,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/dsf001-introduction-to-discovery-framework---dsf001"
     },
     {
-      "id": 112,
+      "id": 96,
       "code": "SDC007",
       "name": "Jumpstart Success with Data 360 One - SDC007",
       "type": "Workshop",
@@ -3290,7 +2818,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc007-jumpstart-success-with-data-cloud-one---sdc007"
     },
     {
-      "id": 113,
+      "id": 97,
       "code": "TTD001",
       "name": "Jumpstart Your Charts: Build the Most Common Tableau Views - TTD001",
       "type": "Workshop",
@@ -3318,7 +2846,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ttd001-jumpstart-your-charts--build-common-tableau-views---ttd001"
     },
     {
-      "id": 114,
+      "id": 98,
       "code": "MSA004",
       "name": "Kickstart Your Journey with Anypoint Platform - MSA004",
       "type": "Workshop",
@@ -3347,63 +2875,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/msa004-kickstart-your-journey-with-anypoint-platform---msa004"
     },
     {
-      "id": 115,
-      "code": "DEX602-1",
-      "name": "Lightning Web コンポーネントプログラミング [前編] - DEX602-1",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Platform"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "optimizing",
-        "strategic"
-      ],
-      "level": "Advanced",
-      "language": "Japanese",
-      "description": "Lightning Web コンポーネント（LWC）を作成して、Lightning ExperienceとSalesforce モバイルで動作するカスタムアプリケーションの開発方法を学習します。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/dex602-1-program-lightning-web-components"
-    },
-    {
-      "id": 116,
-      "code": "DEX602-2",
-      "name": "Lightning Web コンポーネントプログラミング [後編] - DEX602-2",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Platform"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "optimizing",
-        "strategic"
-      ],
-      "level": "Advanced",
-      "language": "Japanese",
-      "description": "Lightning Web コンポーネント（LWC）を作成して、Lightning ExperienceとSalesforce モバイルで動作するカスタムアプリケーションの開発方法を学習します。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/dex602-2-program-lightning-web-components"
-    },
-    {
-      "id": 117,
+      "id": 99,
       "code": "MSA005",
       "name": "Lock It Down: Secure Your APIs with HTTPS - MSA005",
       "type": "Workshop",
@@ -3431,7 +2903,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/msa005-lock-it-down--secure-your-apis-with-https---msa005"
     },
     {
-      "id": 118,
+      "id": 100,
       "code": "SSC001",
       "name": "Manage Accounts and Contacts in Agentforce Sales - SSC001",
       "type": "Workshop",
@@ -3459,7 +2931,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ssc001-manage-accounts-and-contacts-in-sales-cloud---ssc001"
     },
     {
-      "id": 119,
+      "id": 101,
       "code": "SSC004",
       "name": "Manage Activities and Email in Agentforce Sales - SSC004",
       "type": "Workshop",
@@ -3487,7 +2959,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ssc004-manage-activities-and-email-in-sales-cloud---ssc004"
     },
     {
-      "id": 120,
+      "id": 102,
       "code": "CCM101",
       "name": "Manage and Merchandise a B2C Commerce Store - CCM101",
       "type": "Course",
@@ -3516,7 +2988,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ccm101-manage-and-merchandise-a-b2c-commerce-cloud-store"
     },
     {
-      "id": 121,
+      "id": 103,
       "code": "B2B110",
       "name": "Manage and Merchandise a Salesforce Commerce Store - B2B110",
       "type": "Course",
@@ -3544,7 +3016,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/b2b110-manage-and-merchandise-a-salesforce-commerce-store"
     },
     {
-      "id": 122,
+      "id": 104,
       "code": "SSC002",
       "name": "Manage Leads in Agentforce Sales - SSC002",
       "type": "Workshop",
@@ -3572,7 +3044,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ssc002-manage-leads-in-sales-cloud--ssc002-"
     },
     {
-      "id": 123,
+      "id": 105,
       "code": "SSC003",
       "name": "Manage Opportunities in Agentforce Sales - SSC003",
       "type": "Workshop",
@@ -3600,7 +3072,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ssc003-set-up-the-opportunity-workspace-in-sales-cloud--ssc003-"
     },
     {
-      "id": 124,
+      "id": 106,
       "code": "REV005",
       "name": "Manage Sales Transactions in Revenue Cloud - REV005",
       "type": "Workshop",
@@ -3628,66 +3100,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev005-manage-sales-transactions-in-revenue-cloud---rev005"
     },
     {
-      "id": 125,
-      "code": "COH003J",
-      "name": "Marketing Cloud Engagement : 簡単自走支援プログラム - COH003J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Marketing Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。 その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示通貨を「日本円」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/coh003j-cohort-marketing-cloud"
-    },
-    {
-      "id": 126,
-      "code": "MOC001J",
-      "name": "Marketing Cloud Next：Agentforceでキャンペーンを作ってみよう - MOC001J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Marketing Cloud"
-      ],
-      "roles": [
-        "Marketer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示通貨を「日本円」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/moc001j-get-started-with-campaign-creation-and-agentforce-in-marketing-cloud"
-    },
-    {
-      "id": 127,
+      "id": 107,
       "code": "SDC006",
       "name": "Maximize Data Impact with Zero Copy in Data 360 - SDC006",
       "type": "Workshop",
@@ -3716,119 +3129,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc006-maximize-data-impact-with-zero-copy-in-data-360---sdc006"
     },
     {
-      "id": 128,
-      "code": "DEX406-1",
-      "name": "MuleSoft 開発基礎 (Anypoint Code Builder) [前編] - DEX406-1",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "MuleSoft"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "MuleSoft Anypoint Platformおよび Anypoint Code Builder を使用したノーコードAPI構築の基礎を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/dex406-1-anypoint-platform-development--fundamentals-using-anypoint-code-builder---dex406-1"
-    },
-    {
-      "id": 129,
-      "code": "DEX406-2",
-      "name": "MuleSoft 開発基礎 (Anypoint Code Builder) [後編] - DEX406-2",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "MuleSoft"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "MuleSoft Anypoint Platform を使用した API の管理方法と、Mule 4 および Anypoint Code Builder を使用した API アプリケーションの構築方法を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/dex406-2-anypoint-platform-development--fundamentals-using-anypoint-code-builder---dex406-2"
-    },
-    {
-      "id": 130,
-      "code": "DEX401-1",
-      "name": "MuleSoft 開発基礎 (Anypoint Studio) [前編] - DEX401-1",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "MuleSoft"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "MuleSoft Anypoint Platform・Studioに基づいたAPI 実装および統合の構築方法を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/DEX401-1-mulesoft-development-fundamentals"
-    },
-    {
-      "id": 131,
-      "code": "DEX401-2",
-      "name": "MuleSoft 開発基礎 (Anypoint Studio) [後編] - DEX401-2",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "MuleSoft"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "MuleSoft Anypoint Platform・Studioに基づいたAPI 実装および統合の構築方法を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/DEX401-2-mulesoft-development-fundamentals"
-    },
-    {
-      "id": 132,
+      "id": 108,
       "code": "SEC001",
       "name": "On-Demand: Build a Secure Salesforce Org",
       "type": "Course",
@@ -3852,7 +3153,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sec001-on-demand--build-a-secure-salesforce-org---sec001"
     },
     {
-      "id": 133,
+      "id": 109,
       "code": "SSC100",
       "name": "On-Demand: Get Started with Agentforce Sales",
       "type": "Course",
@@ -3876,7 +3177,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/ssc100-get-started-with-agentforce-sales"
     },
     {
-      "id": 134,
+      "id": 110,
       "code": "MAF001",
       "name": "On-Demand: Get Started with MuleSoft Agent Fabric - MAF001",
       "type": "Workshop",
@@ -3902,7 +3203,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/get-started-mulesoft-agent-fabric"
     },
     {
-      "id": 135,
+      "id": 111,
       "code": "SALV005",
       "name": "On-Demand: Sync Emails as Activities: New Einstein Activity Capture",
       "type": "Course",
@@ -3932,7 +3233,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/salv005-on-demand--sync-emails-as-activities--new-einstein-activity-capture---salv005"
     },
     {
-      "id": 136,
+      "id": 112,
       "code": "SALV004",
       "name": "On-Demand: Upgrade to Graph API",
       "type": "Course",
@@ -3958,7 +3259,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/salv004-on-demand--upgrade-to-graph-api---salv004"
     },
     {
-      "id": 137,
+      "id": 113,
       "code": "SDC009",
       "name": "Power Up Your Data Ingestion and Mapping Expertise - SDC009",
       "type": "Workshop",
@@ -3987,7 +3288,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc009-power-up-your-data-ingestion-and-mapping-expertise---sdc009"
     },
     {
-      "id": 138,
+      "id": 114,
       "code": "CRT101",
       "name": "Prepare for your Administrator Certification Exam - CRT101",
       "type": "Course",
@@ -4018,36 +3319,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/crt101-prepare-for-your-administrator-certification-exam"
     },
     {
-      "id": 139,
-      "code": "CRT101J",
-      "name": "Prepare for your Administrator Certification Exam - CRT101J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Sales Cloud",
-        "Platform"
-      ],
-      "roles": [
-        "Administrator"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "Learn the essential administration and configuration features needed to pass the Salesforce Certified Platform Administrator exam.",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/crt101j-prepare-for-your-administrator-certification-exam"
-    },
-    {
-      "id": 140,
+      "id": 115,
       "code": "CTA601",
       "name": "Prepare for your Technical Architect Certification - CTA601",
       "type": "Course",
@@ -4075,7 +3347,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/cta601-prepare-for-your-technical-architect-credential"
     },
     {
-      "id": 141,
+      "id": 116,
       "code": "DEX602",
       "name": "Program Lightning Web Components - DEX602",
       "type": "Course",
@@ -4103,7 +3375,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/dex602-program-lightning-web-components"
     },
     {
-      "id": 142,
+      "id": 117,
       "code": "AGT504",
       "name": "Sales Agent Activation - AGT504",
       "type": "Workshop",
@@ -4134,38 +3406,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt504-sales-agent-activation---agt504"
     },
     {
-      "id": 143,
-      "code": "COH001J",
-      "name": "Sales Cloud : 簡単自走支援プログラム - COH001J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Sales Cloud"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。 その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示言語を「日本語」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/coh001j-cohort-sales-cloud"
-    },
-    {
-      "id": 144,
+      "id": 118,
       "code": "exam-public-sector-solutions-ap---AP-222",
       "name": "Salesforce Accredited Agentforce 360 for Public Sector Professional",
       "type": "Certification Prep",
@@ -4189,7 +3430,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-public-sector-solutions-ap---AP-222"
     },
     {
-      "id": 145,
+      "id": 119,
       "code": "exam-communications-cloud-ap---AP-203",
       "name": "Salesforce Accredited Agentforce Communications Professional",
       "type": "Certification Prep",
@@ -4213,7 +3454,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-communications-cloud-ap---AP-203"
     },
     {
-      "id": 146,
+      "id": 120,
       "code": "exam-consumer-goods-cloud-ap---AP-204",
       "name": "Salesforce Accredited Agentforce Consumer Goods Professional",
       "type": "Certification Prep",
@@ -4237,7 +3478,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-consumer-goods-cloud-ap---AP-204"
     },
     {
-      "id": 147,
+      "id": 121,
       "code": "exam-financial-services-cloud-ap---AP-208",
       "name": "Salesforce Accredited Agentforce Financial Services Professional",
       "type": "Certification Prep",
@@ -4261,7 +3502,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-financial-services-cloud-ap---AP-208"
     },
     {
-      "id": 148,
+      "id": 122,
       "code": "exam-health-cloud-ap---AP-211",
       "name": "Salesforce Accredited Agentforce Health Professional",
       "type": "Certification Prep",
@@ -4285,7 +3526,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-health-cloud-ap---AP-211"
     },
     {
-      "id": 149,
+      "id": 123,
       "code": "exam-manufacturing-cloud-ap---AP-213",
       "name": "Salesforce Accredited Agentforce Manufacturing Professional",
       "type": "Certification Prep",
@@ -4309,7 +3550,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-manufacturing-cloud-ap---AP-213"
     },
     {
-      "id": 150,
+      "id": 124,
       "code": "exam-b2b-commerce-admin-ap---AP-201",
       "name": "Salesforce Accredited B2B Commerce Administrator Professional",
       "type": "Certification Prep",
@@ -4333,7 +3574,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-b2b-commerce-admin-ap---AP-201"
     },
     {
-      "id": 151,
+      "id": 125,
       "code": "exam-b2b-commerce-developer-ap---AP-202",
       "name": "Salesforce Accredited B2B Commerce Developer Professional",
       "type": "Certification Prep",
@@ -4357,7 +3598,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-b2b-commerce-developer-ap---AP-202"
     },
     {
-      "id": 152,
+      "id": 126,
       "code": "exam-fs-consultant---FS-Con-101",
       "name": "Salesforce Certified Agentforce Field Service and Operations Consultant",
       "type": "Certification Prep",
@@ -4381,7 +3622,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-fs-consultant---FS-Con-101"
     },
     {
-      "id": 153,
+      "id": 127,
       "code": "exam-agentforce-life-sciences-consultant---Als-Con-201",
       "name": "Salesforce Certified Agentforce Life Sciences Consultant",
       "type": "Certification Prep",
@@ -4405,7 +3646,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-agentforce-life-sciences-consultant---Als-Con-201"
     },
     {
-      "id": 154,
+      "id": 128,
       "code": "exam-nonprofit-cld-consultant-npc---NP-Con-102",
       "name": "Salesforce Certified Agentforce Nonprofit Consultant",
       "type": "Certification Prep",
@@ -4429,7 +3670,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-nonprofit-cld-consultant-npc---NP-Con-102"
     },
     {
-      "id": 155,
+      "id": 129,
       "code": "exam-sales-consultant---Sales-Con-201",
       "name": "Salesforce Certified Agentforce Sales Consultant",
       "type": "Certification Prep",
@@ -4453,7 +3694,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-sales-consultant---Sales-Con-201"
     },
     {
-      "id": 156,
+      "id": 130,
       "code": "exam-sales-foundations---Sales-101",
       "name": "Salesforce Certified Agentforce Sales Foundations",
       "type": "Certification Prep",
@@ -4477,7 +3718,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-sales-foundations---Sales-101"
     },
     {
-      "id": 157,
+      "id": 131,
       "code": "exam-service-consultant---Service-Con-201",
       "name": "Salesforce Certified Agentforce Service Consultant",
       "type": "Certification Prep",
@@ -4501,7 +3742,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-service-consultant---Service-Con-201"
     },
     {
-      "id": 158,
+      "id": 132,
       "code": "exam-agentforce-specialist---AI-201",
       "name": "Salesforce Certified Agentforce Specialist",
       "type": "Certification Prep",
@@ -4525,7 +3766,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-agentforce-specialist---AI-201"
     },
     {
-      "id": 159,
+      "id": 133,
       "code": "exam-app-architect---App-Arch-301",
       "name": "Salesforce Certified Application Architect",
       "type": "Certification Prep",
@@ -4549,7 +3790,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-app-architect---App-Arch-301"
     },
     {
-      "id": 160,
+      "id": 134,
       "code": "exam-b2c-comm-dev---Comm-Dev-101",
       "name": "Salesforce Certified B2C Commerce Developer",
       "type": "Certification Prep",
@@ -4573,7 +3814,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-b2c-comm-dev---Comm-Dev-101"
     },
     {
-      "id": 161,
+      "id": 135,
       "code": "exam-b2c-solution-architect---Arch-302",
       "name": "Salesforce Certified B2C Solution Architect",
       "type": "Certification Prep",
@@ -4597,7 +3838,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-b2c-solution-architect---Arch-302"
     },
     {
-      "id": 162,
+      "id": 136,
       "code": "exam-business-analyst---BA-201",
       "name": "Salesforce Certified Business Analyst",
       "type": "Certification Prep",
@@ -4621,7 +3862,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-business-analyst---BA-201"
     },
     {
-      "id": 163,
+      "id": 137,
       "code": "exam-crm-analytics---Analytics-Con-201",
       "name": "Salesforce Certified CRM Analytics and Einstein Discovery Consultant",
       "type": "Certification Prep",
@@ -4645,7 +3886,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-crm-analytics---Analytics-Con-201"
     },
     {
-      "id": 164,
+      "id": 138,
       "code": "exam-data-cloud---Data-Con-101",
       "name": "Salesforce Certified Data 360 Consultant",
       "type": "Certification Prep",
@@ -4669,7 +3910,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-data-cloud---Data-Con-101"
     },
     {
-      "id": 165,
+      "id": 139,
       "code": "exam-exp-cld-consultant---EX-Con-101",
       "name": "Salesforce Certified Experience Cloud Consultant",
       "type": "Certification Prep",
@@ -4693,7 +3934,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-exp-cld-consultant---EX-Con-101"
     },
     {
-      "id": 166,
+      "id": 140,
       "code": "exam-heroku-arch---Plat-Arch-206",
       "name": "Salesforce Certified Heroku Architect",
       "type": "Certification Prep",
@@ -4717,7 +3958,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-heroku-arch---Plat-Arch-206"
     },
     {
-      "id": 167,
+      "id": 141,
       "code": "exam-javascript-dev---JS-Dev-101",
       "name": "Salesforce Certified JavaScript Developer",
       "type": "Certification Prep",
@@ -4741,7 +3982,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-javascript-dev---JS-Dev-101"
     },
     {
-      "id": 168,
+      "id": 142,
       "code": "exam-engagement-specialist---MC-201",
       "name": "Salesforce Certified Marketing Cloud Account Engagement Specialist",
       "type": "Certification Prep",
@@ -4765,7 +4006,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-engagement-specialist---MC-201"
     },
     {
-      "id": 169,
+      "id": 143,
       "code": "exam-mce-admin---MCE-Admn-201",
       "name": "Salesforce Certified Marketing Cloud Engagement Administrator",
       "type": "Certification Prep",
@@ -4789,7 +4030,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mce-admin---MCE-Admn-201"
     },
     {
-      "id": 170,
+      "id": 144,
       "code": "exam-mce-consultant---MCE-Con-201",
       "name": "Salesforce Certified Marketing Cloud Engagement Consultant",
       "type": "Certification Prep",
@@ -4813,7 +4054,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mce-consultant---MCE-Con-201"
     },
     {
-      "id": 171,
+      "id": 145,
       "code": "exam-mce-dev---MCE-Dev-201",
       "name": "Salesforce Certified Marketing Cloud Engagement Developer",
       "type": "Certification Prep",
@@ -4837,7 +4078,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mce-dev---MCE-Dev-201"
     },
     {
-      "id": 172,
+      "id": 146,
       "code": "exam-marketing-foundations---MC-101",
       "name": "Salesforce Certified Marketing Cloud Engagement Foundations",
       "type": "Certification Prep",
@@ -4861,7 +4102,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-marketing-foundations---MC-101"
     },
     {
-      "id": 173,
+      "id": 147,
       "code": "exam-mc-email---MC-202",
       "name": "Salesforce Certified Marketing Cloud Engagement Specialist",
       "type": "Certification Prep",
@@ -4885,7 +4126,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mc-email---MC-202"
     },
     {
-      "id": 174,
+      "id": 148,
       "code": "exam-marketing-cloud-next-consultant---MC-Con-201",
       "name": "Salesforce Certified Marketing Cloud Next Consultant",
       "type": "Certification Prep",
@@ -4909,7 +4150,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-marketing-cloud-next-consultant---MC-Con-201"
     },
     {
-      "id": 175,
+      "id": 149,
       "code": "exam-mule-dev---Mule-Dev-201",
       "name": "Salesforce Certified MuleSoft Developer",
       "type": "Certification Prep",
@@ -4933,7 +4174,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mule-dev---Mule-Dev-201"
     },
     {
-      "id": 176,
+      "id": 150,
       "code": "exam-mule-dev-2---Mule-Dev-301",
       "name": "Salesforce Certified MuleSoft Developer II",
       "type": "Certification Prep",
@@ -4957,7 +4198,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mule-dev-2---Mule-Dev-301"
     },
     {
-      "id": 177,
+      "id": 151,
       "code": "exam-mule-foundations---Mule-101",
       "name": "Salesforce Certified MuleSoft Integration Foundations",
       "type": "Certification Prep",
@@ -4981,7 +4222,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mule-foundations---Mule-101"
     },
     {
-      "id": 178,
+      "id": 152,
       "code": "exam-mule-plat-arch---Mule-Arch-201",
       "name": "Salesforce Certified MuleSoft Platform Architect",
       "type": "Certification Prep",
@@ -5005,7 +4246,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mule-plat-arch---Mule-Arch-201"
     },
     {
-      "id": 179,
+      "id": 153,
       "code": "exam-mule-int-arch---Mule-Arch-202",
       "name": "Salesforce Certified MuleSoft Platform Integration Architect",
       "type": "Certification Prep",
@@ -5029,7 +4270,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-mule-int-arch---Mule-Arch-202"
     },
     {
-      "id": 180,
+      "id": 154,
       "code": "exam-omnistudio-consultant---Plat-Con-201",
       "name": "Salesforce Certified Omnistudio Consultant",
       "type": "Certification Prep",
@@ -5053,7 +4294,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-omnistudio-consultant---Plat-Con-201"
     },
     {
-      "id": 181,
+      "id": 155,
       "code": "exam-omnistudio-developer---Plat-Dev-210",
       "name": "Salesforce Certified Omnistudio Developer",
       "type": "Certification Prep",
@@ -5077,7 +4318,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-omnistudio-developer---Plat-Dev-210"
     },
     {
-      "id": 182,
+      "id": 156,
       "code": "exam-platform-admin---Plat-Admn-201",
       "name": "Salesforce Certified Platform Administrator",
       "type": "Certification Prep",
@@ -5101,7 +4342,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-platform-admin---Plat-Admn-201"
     },
     {
-      "id": 183,
+      "id": 157,
       "code": "exam-platform-admin2---Plat-Admn-301",
       "name": "Salesforce Certified Platform Administrator II",
       "type": "Certification Prep",
@@ -5125,7 +4366,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-platform-admin2---Plat-Admn-301"
     },
     {
-      "id": 184,
+      "id": 158,
       "code": "exam-app-builder---Plat-Admn-202",
       "name": "Salesforce Certified Platform App Builder",
       "type": "Certification Prep",
@@ -5149,7 +4390,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-app-builder---Plat-Admn-202"
     },
     {
-      "id": 185,
+      "id": 159,
       "code": "exam-data-architect---Plat-Arch-201",
       "name": "Salesforce Certified Platform Data Architect",
       "type": "Certification Prep",
@@ -5173,7 +4414,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-data-architect---Plat-Arch-201"
     },
     {
-      "id": 186,
+      "id": 160,
       "code": "exam-platform-dev1---Plat-Dev-201",
       "name": "Salesforce Certified Platform Developer",
       "type": "Certification Prep",
@@ -5197,7 +4438,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-platform-dev1---Plat-Dev-201"
     },
     {
-      "id": 187,
+      "id": 161,
       "code": "exam-platform-dev2---Plat-Dev-301",
       "name": "Salesforce Certified Platform Developer II",
       "type": "Certification Prep",
@@ -5221,7 +4462,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-platform-dev2---Plat-Dev-301"
     },
     {
-      "id": 188,
+      "id": 162,
       "code": "exam-dev-lifecycle---Plat-Arch-202",
       "name": "Salesforce Certified Platform Development Lifecycle and Deployment Architect",
       "type": "Certification Prep",
@@ -5245,7 +4486,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-dev-lifecycle---Plat-Arch-202"
     },
     {
-      "id": 189,
+      "id": 163,
       "code": "exam-platform-foundations---Plat-101",
       "name": "Salesforce Certified Platform Foundations",
       "type": "Certification Prep",
@@ -5269,7 +4510,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-platform-foundations---Plat-101"
     },
     {
-      "id": 190,
+      "id": 164,
       "code": "exam-identity-access---Plat-Arch-203",
       "name": "Salesforce Certified Platform Identity and Access Management Architect",
       "type": "Certification Prep",
@@ -5293,7 +4534,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-identity-access---Plat-Arch-203"
     },
     {
-      "id": 191,
+      "id": 165,
       "code": "exam-integration-arch---Plat-Arch-204",
       "name": "Salesforce Certified Platform Integration Architect",
       "type": "Certification Prep",
@@ -5317,7 +4558,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-integration-arch---Plat-Arch-204"
     },
     {
-      "id": 192,
+      "id": 166,
       "code": "exam-sharing-visibility---Plat-Arch-205",
       "name": "Salesforce Certified Platform Sharing and Visibility Architect",
       "type": "Certification Prep",
@@ -5341,7 +4582,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-sharing-visibility---Plat-Arch-205"
     },
     {
-      "id": 193,
+      "id": 167,
       "code": "exam-strategy-designer---Plat-UX-102",
       "name": "Salesforce Certified Platform Strategy Designer",
       "type": "Certification Prep",
@@ -5365,7 +4606,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-strategy-designer---Plat-UX-102"
     },
     {
-      "id": 194,
+      "id": 168,
       "code": "exam-ux-designer---Plat-UX-101",
       "name": "Salesforce Certified Platform User Experience Designer",
       "type": "Certification Prep",
@@ -5389,7 +4630,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-ux-designer---Plat-UX-101"
     },
     {
-      "id": 195,
+      "id": 169,
       "code": "exam-revenue-cloud-consultant---Rev-Con-201",
       "name": "Salesforce Certified Revenue Management Consultant",
       "type": "Certification Prep",
@@ -5413,7 +4654,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-revenue-cloud-consultant---Rev-Con-201"
     },
     {
-      "id": 196,
+      "id": 170,
       "code": "exam-slack-administrator---Slack-Admn-201",
       "name": "Salesforce Certified Slack Administrator",
       "type": "Certification Prep",
@@ -5437,7 +4678,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-slack-administrator---Slack-Admn-201"
     },
     {
-      "id": 197,
+      "id": 171,
       "code": "exam-slack-consultant---Slack-Con-201",
       "name": "Salesforce Certified Slack Consultant",
       "type": "Certification Prep",
@@ -5461,7 +4702,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-slack-consultant---Slack-Con-201"
     },
     {
-      "id": 198,
+      "id": 172,
       "code": "exam-slack-developer---Slack-Dev-201",
       "name": "Salesforce Certified Slack Developer",
       "type": "Certification Prep",
@@ -5485,7 +4726,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-slack-developer---Slack-Dev-201"
     },
     {
-      "id": 199,
+      "id": 173,
       "code": "exam-sys-architect---Sys-Arch-301",
       "name": "Salesforce Certified System Architect",
       "type": "Certification Prep",
@@ -5509,7 +4750,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-sys-architect---Sys-Arch-301"
     },
     {
-      "id": 200,
+      "id": 174,
       "code": "exam-tableau-architect---Analytics-Arch-201",
       "name": "Salesforce Certified Tableau Architect",
       "type": "Certification Prep",
@@ -5533,7 +4774,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tableau-architect---Analytics-Arch-201"
     },
     {
-      "id": 201,
+      "id": 175,
       "code": "exam-tableau-consultant---Analytics-Con-301",
       "name": "Salesforce Certified Tableau Consultant",
       "type": "Certification Prep",
@@ -5557,7 +4798,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tableau-consultant---Analytics-Con-301"
     },
     {
-      "id": 202,
+      "id": 176,
       "code": "exam-tableau-data-analyst---Analytics-DA-201",
       "name": "Salesforce Certified Tableau Data Analyst",
       "type": "Certification Prep",
@@ -5581,7 +4822,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tableau-data-analyst---Analytics-DA-201"
     },
     {
-      "id": 203,
+      "id": 177,
       "code": "exam-tableau-desktop-found---Analytics-101",
       "name": "Salesforce Certified Tableau Desktop Foundations",
       "type": "Certification Prep",
@@ -5605,7 +4846,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tableau-desktop-found---Analytics-101"
     },
     {
-      "id": 204,
+      "id": 178,
       "code": "exam-tableau-next-consultant---Analytics-Con-202",
       "name": "Salesforce Certified Tableau Next Consultant",
       "type": "Certification Prep",
@@ -5629,7 +4870,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tableau-next-consultant---Analytics-Con-202"
     },
     {
-      "id": 205,
+      "id": 179,
       "code": "exam-tableau-server-adm---Analytics-Admn-201",
       "name": "Salesforce Certified Tableau Server Administrator",
       "type": "Certification Prep",
@@ -5653,7 +4894,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tableau-server-adm---Analytics-Admn-201"
     },
     {
-      "id": 206,
+      "id": 180,
       "code": "exam-review-board---Plat-Arch-401-Eval",
       "name": "Salesforce Certified Technical Architect - Architect Evaluation",
       "type": "Certification Prep",
@@ -5677,7 +4918,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-review-board---Plat-Arch-401-Eval"
     },
     {
-      "id": 207,
+      "id": 181,
       "code": "exam-tech-architect---Plat-Arch-401-RB",
       "name": "Salesforce Certified Technical Architect - Architect Review Board Exam",
       "type": "Certification Prep",
@@ -5701,125 +4942,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/exam-tech-architect---Plat-Arch-401-RB"
     },
     {
-      "id": 208,
-      "code": "DEX450-1",
-      "name": "Salesforce Platform 開発者: Apex と UI カスタマイズ [前編] - DEX450-1",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Platform"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "Salesforce Platform 上でロジック、Apex、Lightning Web コンポーネントを用いたプロコードカスタマイズの方法を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/dex450-1-build-applications-programmatically-on-the-salesforce-platform"
-    },
-    {
-      "id": 209,
-      "code": "DEX450-2",
-      "name": "Salesforce Platform 開発者: Apex と UI カスタマイズ [後編] - DEX450-2",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Platform"
-      ],
-      "roles": [
-        "Developer"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "building",
-        "optimizing"
-      ],
-      "level": "Intermediate",
-      "language": "Japanese",
-      "description": "Salesforce Platform 上でロジック、Apex、Lightning Web コンポーネントを用いたプロコードカスタマイズの方法を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/dex450-2-build-applications-programmatically-on-the-salesforce-platform"
-    },
-    {
-      "id": 210,
-      "code": "ADX201-1",
-      "name": "Salesforce 管理Ⅰ[前編] - ADX201-1",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Sales Cloud",
-        "Service Cloud",
-        "Platform"
-      ],
-      "roles": [
-        "Administrator",
-        "Administrator"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "ベストプラクティスと自動化を通じてSalesforce環境をカスタマイズすることで、Salesforce管理者の役割を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/adx201-1-administrative-essentials-for-new-admins-in-lightning-experience"
-    },
-    {
-      "id": 211,
-      "code": "ADX201-2",
-      "name": "Salesforce 管理Ⅰ[後編] - ADX201-2",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Sales Cloud",
-        "Service Cloud",
-        "Platform"
-      ],
-      "roles": [
-        "Administrator",
-        "Administrator"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "ベストプラクティスと自動化を通じてSalesforce環境をカスタマイズすることで、Salesforce管理者の役割を学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/adx201-2-administrative-essentials-for-new-admins-in-lightning-experience"
-    },
-    {
-      "id": 212,
+      "id": 182,
       "code": "DEX003",
       "name": "Secure the Code: Identify and Fix Vulnerabilities - DEX003",
       "type": "Workshop",
@@ -5847,7 +4970,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/dex003-secure-the-code--identify-and-fix-vulnerabilities"
     },
     {
-      "id": 213,
+      "id": 183,
       "code": "ADX012",
       "name": "Secure the Org: Identify & Fix Vulnerabilities - ADX012",
       "type": "Workshop",
@@ -5878,7 +5001,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/adx012-secure-the-org--identify---fix-vulnerabilities---adx012"
     },
     {
-      "id": 214,
+      "id": 184,
       "code": "SDC003",
       "name": "Segment and Activate Data in Data 360 - SDC003",
       "type": "Workshop",
@@ -5906,7 +5029,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc003-segment-and-activate-data-in-data-cloud"
     },
     {
-      "id": 215,
+      "id": 185,
       "code": "AGT503",
       "name": "Service Agent Activation - AGT503",
       "type": "Workshop",
@@ -5937,7 +5060,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/agt503-service-agent-activation---agt503"
     },
     {
-      "id": 216,
+      "id": 186,
       "code": "LSC001",
       "name": "Set Up Accounts and Territories in Life Sciences Cloud for Customer Engagement - LSC001",
       "type": "Workshop",
@@ -5965,7 +5088,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/lsc001-set-up-account-and-territories-in-lsc-for-customer-engagement---lsc001"
     },
     {
-      "id": 217,
+      "id": 187,
       "code": "ASC002",
       "name": "Set Up the Lightning Service Console - ASC002",
       "type": "Workshop",
@@ -5993,7 +5116,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/asc002-set-up-the-lightning-service-console--asc002-"
     },
     {
-      "id": 218,
+      "id": 188,
       "code": "LSC003",
       "name": "Set Up Visit Management in Life Sciences Cloud for Customer Engagement - LSC003",
       "type": "Workshop",
@@ -6021,7 +5144,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/lsc003-set-up-visit-management-in-life-sciences-cloud---lsc003"
     },
     {
-      "id": 219,
+      "id": 189,
       "code": "BRE001",
       "name": "Simplify Complex Calculations with Business Rules Engine - BRE001",
       "type": "Workshop",
@@ -6055,7 +5178,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/bre001-simplify-complex-calculations-with-business-rules-engine---bre001"
     },
     {
-      "id": 220,
+      "id": 190,
       "code": "REV010",
       "name": "Streamline Approvals with Revenue Cloud - REV010",
       "type": "Workshop",
@@ -6083,38 +5206,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev010-streamline-approvals-with-agentforce-revenue-management---rev010"
     },
     {
-      "id": 221,
-      "code": "COH004J",
-      "name": "Tableau : 簡単自走支援プログラム - COH004J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Tableau"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。 その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示通貨を「日本円」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/coh004j-cohort-tableau"
-    },
-    {
-      "id": 222,
+      "id": 191,
       "code": "TTD101",
       "name": "Tableau Desktop I: Fundamentals - TTD101",
       "type": "Course",
@@ -6143,7 +5235,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/TTD101-Tableau-Desktop-Fundamentals"
     },
     {
-      "id": 223,
+      "id": 192,
       "code": "TTD201",
       "name": "Tableau Desktop II: Intermediate - TTD201",
       "type": "Course",
@@ -6172,7 +5264,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/TTD201-Tableau-Desktop-Intermediate"
     },
     {
-      "id": 224,
+      "id": 193,
       "code": "TTD301",
       "name": "Tableau Desktop III: Advanced - TTD301",
       "type": "Course",
@@ -6201,38 +5293,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/TTD301-Tableau-Desktop-Advanced"
     },
     {
-      "id": 225,
-      "code": "COH005J",
-      "name": "Tableau Prep : 簡単自走支援プログラム - COH005J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Tableau"
-      ],
-      "roles": [
-        "Administrator",
-        "Developer",
-        "Architect",
-        "Consultant"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。 その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示通貨を「日本円」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/coh005j-cohort-tableau-prep"
-    },
-    {
-      "id": 226,
+      "id": 194,
       "code": "TTP101",
       "name": "Tableau Prep I - TTP101",
       "type": "Course",
@@ -6262,7 +5323,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/TTP101-Tableau-Prep"
     },
     {
-      "id": 227,
+      "id": 195,
       "code": "TSA201",
       "name": "Tableau Server Administration - TSA201",
       "type": "Course",
@@ -6290,35 +5351,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/TSA201-Tableau-Server-Administration"
     },
     {
-      "id": 228,
-      "code": "TTD001J",
-      "name": "Tableauの基本チャートを作ってみよう - TTD001J",
-      "type": "Workshop",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [
-        "Tableau"
-      ],
-      "roles": [
-        "Business Analyst"
-      ],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building"
-      ],
-      "level": "Foundational",
-      "language": "Japanese",
-      "description": "【受講可能なセッションが表示されない方へ】画面右上の「ログイン」ボタンから「Trailhead Academy」に進み、ログインしてください。その後、右上の地球儀のアイコン（〇に縦線と横線が入ったマーク）をクリックして、表示通貨を「日本円」に変更してください。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/ttd001j-jumpstart-your-charts--build-common-tableau-views---ttd001j"
-    },
-    {
-      "id": 229,
+      "id": 196,
       "code": "REV006",
       "name": "Tailor Your Order Fulfillment with Dynamic Revenue Orchestrator - REV006",
       "type": "Workshop",
@@ -6346,7 +5379,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev006-tailor-your-order-fulfillment-with-dynamic-revenue-orchestrator---rev006"
     },
     {
-      "id": 230,
+      "id": 197,
       "code": "SDC015",
       "name": "Take Action with Data in Data 360 - SDC015",
       "type": "Workshop",
@@ -6375,7 +5408,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/sdc015-take-action-with-data-in-data-360---sdc015"
     },
     {
-      "id": 231,
+      "id": 198,
       "code": "BSX101",
       "name": "Understand and Drive Your Salesforce Implementation - BSX101",
       "type": "Course",
@@ -6406,7 +5439,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/bsx101-understand-and-drive-your-salesforce-implementation"
     },
     {
-      "id": 232,
+      "id": 199,
       "code": "AFS013",
       "name": "Upgrade Your Agent from Legacy to New Builder - AFS013",
       "type": "Workshop",
@@ -6432,7 +5465,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/afs013-upgrade-your-agent-from-legacy-to-new-builder---afs013"
     },
     {
-      "id": 233,
+      "id": 200,
       "code": "REV002",
       "name": "Use Product Catalog Management to Streamline Sales in Revenue Cloud - REV002",
       "type": "Workshop",
@@ -6458,7 +5491,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/rev002-use-product-catalog-management-to-streamline-sales-in-revenue-cloud"
     },
     {
-      "id": 234,
+      "id": 201,
       "code": "TVA101",
       "name": "Visual Analytics - TVA101",
       "type": "Course",
@@ -6489,7 +5522,7 @@
       "link": "https://trailheadacademy.salesforce.com/classes/TVA101-Tableau-Visual-Analytics"
     },
     {
-      "id": 235,
+      "id": 202,
       "code": "TNX001",
       "name": "Visualize and Act on Data with Tableau Next - TNX001",
       "type": "Workshop",
@@ -6516,58 +5549,6 @@
       "description": "Discover and act on data insights in Tableau Next, the world’s first agentic analytics platform.",
       "format": "Virtual",
       "link": "https://trailheadacademy.salesforce.com/classes/tnx001-visualize-and-act-on-data-with-tableau-next---tnx001"
-    },
-    {
-      "id": 236,
-      "code": "CRT251J",
-      "name": "認定 Agentforce Sales コンサルタント試験ポイントスタディ - CRT251J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [],
-      "roles": [],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building",
-        "optimizing",
-        "strategic"
-      ],
-      "level": "",
-      "language": "Japanese",
-      "description": "認定 Agentforce Sales  コンサルタント認定試験に関連する機能と構成シナリオについて学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/crt251j-prepare-for-your-sales-cloud-consultant-certification-exam"
-    },
-    {
-      "id": 237,
-      "code": "CRT361J",
-      "name": "認定 Agentforce Service コンサルタント試験ポイントスタディ - CRT361J",
-      "type": "Course",
-      "tier": [
-        "Premier",
-        "Signature"
-      ],
-      "products": [],
-      "roles": [],
-      "industry": [
-        "All"
-      ],
-      "maturity": [
-        "getting-started",
-        "building",
-        "optimizing",
-        "strategic"
-      ],
-      "level": "",
-      "language": "Japanese",
-      "description": "認定 Agentforce Service コンサルタント試験の出題範囲を確認し、範囲ごとに重要なポイントを講義形式で学びます。",
-      "format": "Virtual",
-      "link": "https://trailheadacademy.salesforce.com/classes/crt261j-prepare-for-your-service-cloud-consultant-certification-exam"
     }
   ]
 }
